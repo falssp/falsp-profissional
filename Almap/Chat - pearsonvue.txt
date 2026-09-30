@@ -1,0 +1,89 @@
+KrisMinimize End conversation
+New message
+
+Info at 20:44, Jul 14:
+Thank you for contacting Pearson VUE Live Chat. An agent will be with you shortly.
+Info at 20:46, Jul 14:
+All agents are currently assisting others. Thank you for your patience.
+Info at 20:48, Jul 14:
+All agents are currently assisting others. Thank you for your patience.
+Info at 20:50, Jul 14:
+All agents are currently assisting others. Thank you for your patience.
+Info at 20:52, Jul 14:
+All agents are currently assisting others. Thank you for your patience.
+Info at 20:54, Jul 14:
+All agents are currently assisting others. Thank you for your patience.
+Info at 20:54, Jul 14:
+You are now chatting with Kris. How may I assist you today?
+Kris at 20:54, Jul 14:
+Thank you for contacting Pearson VUE candidate services. My name is Kris. I apologize for the delay. How may I assist you today?
+You at 20:55, Jul 14:
+I'm doing a Facebook test and my screen is frozen
+You at 20:55, Jul 14:
+Now I can return to test
+You at 20:56, Jul 14:
+I received a message unauthorized access
+Kris at 20:56, Jul 14:
+I apologize for the inconvenience. I will surely check this for you.
+Kris at 20:56, Jul 14:
+Let me pull up your profile quickly to check the details.
+You at 20:56, Jul 14:
+ok
+You at 20:56, Jul 14:
+what do U need?
+Kris at 20:57, Jul 14:
+Could you please verify the complete postal address that you have registered on your account?
+You at 20:57, Jul 14:
+I put my work mail
+You at 20:57, Jul 14:
+felipe.lima@almapbbdo.com.br
+Kris at 20:59, Jul 14:
+Please provide the postal address listed on the profile for the city Sao Paulo.
+You at 21:00, Jul 14:
+04515-030
+Kris at 21:00, Jul 14:
+Please provide complete address.
+You at 21:01, Jul 14:
+Avenue Jacutinga 457 apt. 62
+Kris at 21:01, Jul 14:
+Thank you.
+Kris at 21:01, Jul 14:
+To confirm, is this for the 300-101: Facebook Certified Creative Strategy Exam, Portuguese-Brazilian exam which was scheduled for July 14, 2020, at 8:00 PM BRT?
+You at 21:01, Jul 14:
+Yes
+Kris at 21:02, Jul 14:
+Thank you for the confirmation.
+Kris at 21:02, Jul 14:
+Can you hold for 2-3 minutes while I check this for you?
+You at 21:02, Jul 14:
+please
+Kris at 21:04, Jul 14:
+I have checked the details and in this scenario, I will need to create a Case to request retake of the exam which will be reviewed by our Program Coordinators and you can expect a resolution on it within next 3-5 business days.
+Kris at 21:05, Jul 14:
+Please provide the operating system that you are using and access code.
+You at 21:06, Jul 14:
+I'm using the W10 and I don't have anymore my acess code
+Kris at 21:06, Jul 14:
+No problem. Thank you for the operating system.
+Kris at 21:06, Jul 14:
+Please allow me 2-3 minutes while I am creating Case.
+You at 21:07, Jul 14:
+ok
+Kris at 21:09, Jul 14:
+I have created a Case 04747684 for the issue which will be reviewed by Program Coordinators. Once review is completed, you will receive a resolution via email on the registered email address within next 3-5 business days.
+You at 21:10, Jul 14:
+ok thanks
+Kris at 21:10, Jul 14:
+You are welcome. Is there anything else I can assist you with today?
+You at 21:10, Jul 14:
+unfortunately now
+Kris at 21:11, Jul 14:
+Is there anything else I can help you with?
+You at 21:12, Jul 14:
+No.. Many thanks for your support
+Kris at 21:12, Jul 14:
+It was my pleasure to help you. Thank you for contacting Pearson VUE candidate services. Have a great day!
+You at 21:12, Jul 14:
+Have a nice day to U 2
+Kris at 21:13, Jul 14:
+Thank you. Bye!
