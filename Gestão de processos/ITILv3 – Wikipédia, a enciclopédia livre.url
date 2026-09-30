@@ -1,0 +1,9 @@
+[DEFAULT]
+BASEURL=https://pt.wikipedia.org/wiki/ITILv3
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,11
+[InternetShortcut]
+IDList=
+URL=https://pt.wikipedia.org/wiki/ITILv3
+IconFile=https://pt.wikipedia.org/static/favicon/wikipedia.ico
+IconIndex=1

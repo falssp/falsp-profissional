@@ -1,0 +1,15 @@
+[DEFAULT]
+BASEURL=http://pt.slideshare.net/ErickSaraivadaSilva/governana-de-ti-e-itil
+[DOC_fb-api-iframe]
+BASEURL=https://pt.slideshare.net/fbconnect/fb_api_iframe
+ORIGURL=https://pt.slideshare.net/fbconnect/fb_api_iframe
+[DOC_fb-api-iframe_fb_xdm_frame_https]
+BASEURL=https://s-static.ak.facebook.com/connect/xd_arbiter/1ldYU13brY_.js?version=41
+ORIGURL=https://s-static.ak.facebook.com/connect/xd_arbiter/1ldYU13brY_.js?version=41#channel=f150fdf976e9f05&origin=https%3A%2F%2Fpt.slideshare.net
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,2
+[InternetShortcut]
+IDList=
+URL=http://pt.slideshare.net/ErickSaraivadaSilva/governana-de-ti-e-itil
+IconFile=http://public.slidesharecdn.com/b/images/logo/linkedin-ss/linkedin_ss_favicon.ico?d0e5c05903
+IconIndex=1

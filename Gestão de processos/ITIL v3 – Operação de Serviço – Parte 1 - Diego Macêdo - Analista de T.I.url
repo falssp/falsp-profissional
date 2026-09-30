@@ -1,0 +1,15 @@
+[DEFAULT]
+BASEURL=http://www.diegomacedo.com.br/itil-v3-operacao-de-servico-parte-1/
+[DOC_fb_xdm_frame_http]
+BASEURL=http://static.ak.facebook.com/connect/xd_arbiter/jb3BUxkAISL.js?version=41
+ORIGURL=http://static.ak.facebook.com/connect/xd_arbiter/jb3BUxkAISL.js?version=41#channel=f10ed9b7d9aa7d6&origin=http%3A%2F%2Fwww.diegomacedo.com.br
+[DOC_fb_xdm_frame_https]
+BASEURL=https://s-static.ak.facebook.com/connect/xd_arbiter/jb3BUxkAISL.js?version=41
+ORIGURL=https://s-static.ak.facebook.com/connect/xd_arbiter/jb3BUxkAISL.js?version=41#channel=f10ed9b7d9aa7d6&origin=http%3A%2F%2Fwww.diegomacedo.com.br
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,2
+[InternetShortcut]
+IDList=
+URL=http://www.diegomacedo.com.br/itil-v3-operacao-de-servico-parte-1/
+IconFile=http://i0.wp.com/www.diegomacedo.com.br/wp-content/uploads/2015/08/cropped-icon-dm.png?fit=32%2C32
+IconIndex=1
