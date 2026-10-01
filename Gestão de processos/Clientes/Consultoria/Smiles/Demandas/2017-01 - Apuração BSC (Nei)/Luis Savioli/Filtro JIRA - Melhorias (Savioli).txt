@@ -1,0 +1,1 @@
+Project = dsbl AND reporter = luis.savioli AND createdDate >= 2016-01-01 AND createdDate <= 2016-12-31 AND status = done AND summary !~ erro AND summary !~ erros AND summary !~ problema AND summary !~ errado AND summary !~ backlog AND summary !~ cancelar ORDER BY resolved DESC, created DESC
