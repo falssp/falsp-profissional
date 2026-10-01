@@ -1,0 +1,8 @@
+Esse processo soluciona o bug onde os arquivos do ISE Posture não são copiado de forma automática, impedindo que o System Scan libere o acesso ao Adaxes.
+
+É preciso copiar os arquivos manualmente.
+
+Copiar os arquivos do "ISE Posture.zip" contido nessa pasta
+
+Para o caminho:
+C:\ProgramData\Cisco\Cisco AnyConnect Secure Mobility Client\ISE Posture

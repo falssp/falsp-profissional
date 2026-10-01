@@ -1,0 +1,112 @@
+You’re connected with agent Amogh.
+11:50 AM
+Welcome! Your Case ID is 3-0016000036946. Refer to this if you need to contact us again.
+A
+Hi Felipe, this is Amogh, hope you're doing well!
+Amogh · 11:50 AM
+Hello Amoghhow are you?
+11:51 AM
+A
+I'm doing well, thanks for asking.
+Also, Thank you for your patience. I would like to apologize for the long wait time.
+Amogh · 11:51 AM
+great
+no worrries
+11:51 AM
+A
+How may I assist you today?
+Amogh · 11:51 AM
+I nedd to create a new advertiser in DV 360 but the client have many fiscal documents (one for eache product)
+how we can do that?
+can i provide a step by step process please?
+11:52 AM
+A
+Just to confirm, you'd like to know what are the steps to create a new Advertiser in DV360, correct?
+I'm not quite sure what exactly you mean by client having many fiscal documents (one for each product).
+Amogh · 11:54 AM
+I need to create a new billing profile
+so we can use to create the new advertisers
+11:55 AM
+A
+Sorry, but from what I know the billing profiles are created under a Partner.
+So you would like to create a new billing profile under the Partner, is that correct?
+Amogh · 11:58 AM
+yes
+the client equals a partner
+the client have many products and it have many fiscal documents one number for each product
+so we need to crate one biliing for one product
+12:00 PM
+A
+Can we hop on a quick screen share so that I can help you create a new billing profile under the Partner?
+Amogh · 12:00 PM
+sure
+12:01 PM
+A
+Okay, I'm sharing the link for screen share request. Please allow me 5 minutes.
+https://g.co/support/vu9yxa
+Amogh · 12:02 PM
+done
+12:03 PM
+A
+Okay, I can see your screen now.
+Please open the Partner settings option..
+Click on New billing profile.
+Amogh · 12:04 PM
+I can only crate a copy
+I can't start one from scretch
+12:05 PM
+A
+Okay.. It seems like 'New billing profile' option is not showing.
+Amogh · 12:07 PM
+right
+12:08 PM
+A
+Please allow me 10 minutes to check this internally.
+Amogh · 12:08 PM
+sure
+12:08 PM
+A
+You may close the screenshare request.
+Amogh · 12:08 PM
+done
+12:08 PM
+A
+Thank you for your patience.
+Amogh · 12:18 PM
+👍
+12:18 PM
+A
+I'm still checking on this.. Please allow me 10 more minutes.
+Amogh · 12:18 PM
+ok
+12:19 PM
+A
+Thank you for your patience.
+I have checked internally and it seems like in order to create a new billing profile you would need to reach out to the Billing Support team via this link: https://support.google.com/marketingplatform/contact/billing
+They'll be able to help you create a new billing profile.
+Amogh · 12:31 PM
+right
+12:32 PM
+A
+Please ensure that the currency is the same as the partner currency.
+Amogh · 12:32 PM
+sure
+12:32 PM
+A
+I hope this helps. Please let me know if there is anything else I may assist you with?
+Amogh · 12:32 PM
+not for today
+many thanks for the assist
+12:33 PM
+A
+You're welcome. Thanks for confirming.
+It was a pleasure chatting with you Felipe; stay safe & have a great rest of the day! 🙂
+Amogh · 12:33 PM
+U too
+12:33 PM
+A
+Your chat session has ended. Thanks for reaching out.
+For your reference, your case number is 3-0016000036946
+Amogh · 12:34 PM
+The session has ended.
+12:34 PM

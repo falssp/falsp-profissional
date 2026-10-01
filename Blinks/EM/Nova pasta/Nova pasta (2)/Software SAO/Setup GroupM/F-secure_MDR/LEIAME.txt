@@ -1,0 +1,3 @@
+Para instalar use esse comando como admin:
+
+F-Secure_MDR-OnlineInstaller.exe --voucher 9MJG-D9YP-7TGP-R2ZY-6XQL

@@ -1,0 +1,94 @@
+You’re connected with agent Deshik.
+3:45 PM
+D
+Hello, welcome to Campaign Manager 360 Support. My name is Deshik. I will be happy to help you with your inquiry today. Please confirm if you are connected.
+
+For your reference, your case number is 0-5728000034603.
+Deshik · 3:45 PM
+Hello Deshik how are you?
+3:46 PM
+D
+Hello Felipe, How are you ?
+Deshik · 3:46 PM
+I'm fine
+and U?
+3:46 PM
+D
+I'm doing great, thanks for asking.
+Deshik · 3:46 PM
+Great
+3:47 PM
+D
+Could you please elaborate the issue ?
+Deshik · 3:47 PM
+sure
+We need to impl
+We need to implement a campaign for Spotify and they request that the audio creative and the jpg creative are need to upload in the same tag
+how can we do that?
+3:48 PM
+D
+So you need a Tag which contains audio and jpg in a single tag? I'm I correct
+Deshik · 3:49 PM
+right
+3:49 PM
+D
+i would like to confirm if audio and jpg need to serve at a time? I'm I correct ?
+Or else you need jpg as a back up ?
+Deshik · 3:51 PM
+the same time I think because we understand tha first the jpg appears and if have intersest you click and show the audio file
+but I don't know the right answer
+3:53 PM
+D
+Thanks for confirming Felipe.
+Please allow me a 10 minutes while I check and help you on it.
+Deshik · 3:53 PM
+sure
+3:54 PM
+D
+Thanks for staying connected.
+Deshik · 4:01 PM
+sure
+4:04 PM
+D
+In CM360 whenever you upload any asset for audio creative. you have an option to add an companion creatives at creative level.
+So when ever you upload a companion creative at creative level this will display along with the audio creative.
+And both the creatives will be included in the same VAST tags.
+https://support.google.com/campaignmanager/answer/3312918?hl=en&sjid=9749727086904697417-AP
+For more information. Please refer to this article.
+Deshik · 4:08 PM
+many thanksss
+I'll test here
+4:08 PM
+D
+Your wekcome. Is there anything else I can help you with ?
+*welcome
+Deshik · 4:08 PM
+Yes
+just another doubt about
+we need to create a placement in stream audio
+an ad standard for the audio
+and another standard for jpg with de back up or default file
+is this correct?
+4:10 PM
+D
+Well, In this case first you have to create a placement with the compatibility as "instream audio ".
+And then you have to create an standard Ad .
+And then you have to create an instream audio creative in CM 360 and there is an option at the creative level " Companion creative" where you have any option to add display creative.
+And for the steps on how to add the companion creative you can refer to the article, I have shared above.
+Deshik · 4:14 PM
+ok.. I'll read the article
+4:14 PM
+D
+Is there anything else I can help you with ?
+Deshik · 4:14 PM
+no thanls
+thanks
+4:15 PM
+D
+Before you go, I’ll share a link to a satisfaction survey. Any feedback you have is appreciated
+It was nice interacting with you. Have a great day!
+Please take a minute to provide your feedback about this interaction. We'll use your responses to improve our products and services. Thanks! Click here to access the short survey: https://support.google.com/google-ads/contact/survey_transactional?&cxtype=1&caseid=ABp5YsSG4lbWTxCeo3ZJJvF1aU_lYOx18a87hQdcdvPNyNLxsRr6QhCBDWw=&click=l
+For your reference, your case number is 0-5728000034603.
+Deshik · 4:15 PM
+The session has ended.
+4:15 PM
