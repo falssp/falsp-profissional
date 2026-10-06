@@ -1,10 +1,3 @@
-Donate Page: http://www.joejoesoft.com/vcms/115/
-
-This program is fully functional freeware. Donations are not 
-required, but are recommended. 
-
-You can help by simply using the Amazon.com banner on the 
-Donate Page when you make your next purchase.
-
-Thanks,
-**%JJJ%**
+version https://git-lfs.github.com/spec/v1
+oid sha256:9a172d300f02c9732925ac6813f41eaadbd8e0e9c9e6d450ef9808e9d9920682
+size 277

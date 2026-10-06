@@ -1,14 +1,3 @@
-<!-- 
-Start of global snippet: Please do not remove
-Place this snippet between the <head> and </head> tags on every page of your site.
--->
-<!-- Global site tag (gtag.js) - Google Marketing Platform -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=DC-4277444"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'DC-4277444');
-</script>
-<!-- End of global snippet: Please do not remove -->
+version https://git-lfs.github.com/spec/v1
+oid sha256:38d3d17c2be41f1ed4284e25cafcce7878fa7e6995cd87ad6fb61dc0cadca7a1
+size 521

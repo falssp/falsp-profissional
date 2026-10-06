@@ -1,9 +1,3 @@
-<!-- Global site tag (gtag.js) - Google Ads: 985873579 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-985873579"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-985873579');
-</script>
+version https://git-lfs.github.com/spec/v1
+oid sha256:bc7d5a5e2ff6cb075bc8ad11b8b048b12a5ee8e155273344d5d1a3624f9502b8
+size 326
