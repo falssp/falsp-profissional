@@ -1,0 +1,13 @@
+Falha de Software - BUG
+Falha de Software - Configuração
+Falha de Banco de Dados
+Falha de Equipamento de Comunicação
+Falha de Hardware - Notebook
+Falha de Hardware - Periféricos
+Falha de Link de Comunicação
+Falha de Sistema Operacional
+Falha Operacional - Time de TI
+Falha Operacional - Usuário
+Dúvida Operacional - Usuário
+Falha ou Falta de Permissionamento
+Nenhuma Falha Identificada
