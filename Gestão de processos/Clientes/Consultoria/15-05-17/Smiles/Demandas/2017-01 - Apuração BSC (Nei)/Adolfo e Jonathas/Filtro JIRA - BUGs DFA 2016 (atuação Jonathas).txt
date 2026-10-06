@@ -1,0 +1,1 @@
+project = DFA AND issuetype = bug AND component != Liferay AND resolution != unresolved AND createdDate >= 2016-01-01 AND createdDate <= 2016-12-31 AND assignee was jonathas.souza ORDER BY created DESC

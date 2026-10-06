@@ -1,0 +1,5 @@
+Os seguintes critérios são considerados para classificar uma Request for Change (RFC) como Sem Sucesso:
+Request for Change (RFC) executada no ambiente de Produção que gerou algum Incidente (com ou sem impacto direto a área de negócio);
+Request for Change (RFC) executada no ambiente de Produção, parcialmente;
+Request for Change (RFC) executada no ambiente de Produção que apresentou erros durante a sua execução (com ou sem impacto direto a área de negócio);
+Request for Change (RFC) executada no ambiente de Produção cujo plano de retorno foi executado (total ou parcial).

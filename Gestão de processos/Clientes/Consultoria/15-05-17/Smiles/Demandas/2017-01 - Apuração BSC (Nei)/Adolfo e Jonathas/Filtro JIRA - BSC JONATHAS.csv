@@ -1,0 +1,122 @@
+Priority,Issue Type,Issue key,Issue id,Summary,Assignee,Status,Resolution,Labels,Labels,Labels,Component/s,Component/s,Component/s,Fix Version/s,Fix Version/s,Fix Version/s,Created,Resolved,Updated
+Major,Bug,DFA-855,87581,Comportamento Extrato,raul.ferreira,Done,Fixed,,,,Portal,,,Não Planejado,,,12/Dec/16 8:45 AM,15/Dec/16 6:27 PM,15/Dec/16 6:27 PM
+Major,Bug,DFA-851,86676,[RocketMiles] - Erro no portlet de busca de voos,,Done,Fixed,,,,Portal,,,DFA-26.12.16,,,06/Dec/16 3:41 PM,28/Dec/16 5:52 PM,03/Jan/17 10:30 AM
+Major,Bug,DFA-850,86669,App - Meus Voos,jonathas.souza,Done,Fixed,,,,APP,,,Não Planejado,,,06/Dec/16 3:11 PM,15/Dec/16 5:56 PM,15/Dec/16 5:56 PM
+Major,Bug,DFA-849,86668,[RocketMiles] - Erro site mobile x Horário de Verão,,Done,Fixed,Operação_Assistida,Quality_Check,,APP,,,DFA-26.12.16,,,06/Dec/16 3:09 PM,29/Dec/16 2:20 PM,05/Jan/17 4:49 PM
+Major,Bug,DFA-847,86621,EMIRATES - Crédito Retroativo,,Done,Fixed,,,,Portal,,,DFA-26.12.16,,,06/Dec/16 11:27 AM,29/Dec/16 2:11 PM,29/Dec/16 2:11 PM
+Major,Bug,DFA-846,86619,"[RocketMiles] - [Busca de Voo] - Não é possível selecionar ""Outras companhias aéreas parceiras""",,Done,Fixed,Operação_Assistida,,,Portal,,,DFA-26.12.16,,,06/Dec/16 11:24 AM,29/Dec/16 2:19 PM,29/Dec/16 2:19 PM
+Major,Bug,DFA-845,86333,[RocketMiles] - Calendário sem o Mês Anterior,,Done,Fixed,Operação_Assistida,Quality_Check,,Portal,,,DFA-26.12.16,,,02/Dec/16 2:49 PM,29/Dec/16 2:18 PM,03/Jan/17 11:32 AM
+Major,Bug,DFA-844,86330,[RocketMiles] - Cliente logado - Senha não reconhecida,,Done,Fixed,Operação_Assistida,,,Portal,,,DFA-26.12.16,,,02/Dec/16 2:20 PM,29/Dec/16 2:17 PM,29/Dec/16 2:17 PM
+Critical,Bug,DFA-843,86233,[Smiles & Money] - Erro no cancelamento Congênere,renan.wuo,Done,Fixed,Quality_Check,,,Portal,,,Não Planejado,,,01/Dec/16 3:08 PM,30/Dec/16 3:46 PM,30/Dec/16 3:46 PM
+Major,Bug,DFA-841,86127,Mesmo e-mail entrando em várias contas diferentes,jonathas.souza,Done,Fixed,,,,Portal,,,Não Planejado,,,30/Nov/16 4:28 PM,14/Dec/16 10:03 AM,14/Dec/16 10:03 AM
+Major,Bug,DFA-839,86059,Retorno de erro do Siebel - GoPoints,raul.ferreira,Done,Fixed,,,,Portal,,,Não Planejado,,,30/Nov/16 10:06 AM,19/Dec/16 4:12 PM,19/Dec/16 4:12 PM
+Major,Bug,DFA-812,81305,Erro para finalizar emissão sem milhas,jonathas.souza,Done,Fixed,Quality_Check,,,Portal,,,Não Planejado,,,10/Nov/16 2:21 PM,15/Dec/16 4:00 PM,15/Dec/16 4:00 PM
+Major,Bug,DFA-811,81113,Melhoria na mensagem de tela para o processo de reset de senha,renan.wuo,Done,Fixed,,,,Portal,,,DFA-14.11.16,,,09/Nov/16 10:46 AM,16/Nov/16 9:59 AM,16/Nov/16 9:59 AM
+Major,Bug,DFA-808,80183,Versão 1.5.2 do Android não faz busca de voos,daniel.mizobuchi,Done,Fixed,,,,APP,,,APP-31.10.16,,,07/Nov/16 4:35 PM,10/Nov/16 7:37 PM,10/Nov/16 8:11 PM
+Major,Bug,DFA-787,76894,[Clube] Regularização Clube Smiles - Checkbox não marcado,rafael.croce,Done,Fixed,,,,Portal,,,DFA-14.11.16,,,21/Oct/16 4:35 PM,16/Nov/16 9:52 AM,16/Nov/16 9:52 AM
+Major,Bug,DFA-785,76698,E-mail indevido para o cliente Smiles com valores da (SL),raul.ferreira,Done,Fixed,,,,Portal,,,Não Planejado,,,20/Oct/16 4:31 PM,30/Dec/16 3:57 PM,30/Dec/16 3:57 PM
+Major,Bug,DFA-784,76639,Rightnow - alteração da pesquisa de satisfação ,,Done,Fixed,,,,RightNow,,,Rocket/Localiza.Fix 30.11.16,,,20/Oct/16 7:44 AM,01/Dec/16 8:58 AM,02/Dec/16 4:09 PM
+Major,Bug,DFA-783,76638,Relatório da pesquisa de satisfação - Rightnow,,Done,Fixed,,,,RightNow,,,Rocket/Localiza.Fix 30.11.16,,,20/Oct/16 7:38 AM,01/Dec/16 8:57 AM,02/Dec/16 4:09 PM
+Major,Bug,DFA-774,75776,[OUD] Problema na Gravação do Custo das Emissões Gol,valdene.vale,Done,Fixed,OUD,,,Portal,,,DFA-14.11.16,,,14/Oct/16 3:08 PM,30/Nov/16 9:46 AM,15/Dec/16 3:13 PM
+Major,Bug,DFA-772,75765,[Compra de milhas] - erro para prosseguir com a compra,rafael.croce,Done,Fixed,Operação_Assistida,,,Portal,,,DFA-14.11.16,,,14/Oct/16 2:08 PM,07/Nov/16 7:00 PM,16/Nov/16 9:53 AM
+Major,Bug,DFA-766,75622,[Minha Conta] - Não reconhece informações do cliente,daniel.braga,Done,Fixed,Operação_Assistida,,,Portal,,,Não Planejado,,,11/Oct/16 2:32 PM,07/Dec/16 3:35 PM,07/Dec/16 3:35 PM
+Major,Bug,DFA-762,75421,[OUD] Painel - Validações sobre Membros e Tier (Idioma espanhol Incorreto),renan.wuo,Done,Fixed,Operação_Assistida,OUD,,Portal,,,DFA-14.11.16,,,07/Oct/16 4:16 PM,16/Nov/16 9:53 AM,30/Nov/16 9:46 AM
+Major,Bug,DFA-761,75295,[Extrato] - Não exibir transações 'Resgate Saldo divergente’ e ‘Acumulo Saldo Divergente’ ,rafael.croce,Done,Fixed,,,,Portal,,,MLS - 24.10,,,06/Oct/16 1:13 PM,25/Oct/16 1:38 PM,25/Oct/16 1:38 PM
+Major,Bug,DFA-753,75155,Validade das Milhas / Cliente,jonathas.souza,Done,Fixed,,,,Portal,,,Não Planejado,,,04/Oct/16 4:33 PM,04/Oct/16 4:33 PM,04/Oct/16 4:33 PM
+Major,Bug,DFA-752,75111,"[OUD] For input string: """"",rafael.croce,Done,Fixed,Operação_Assistida,OUD,,Portal,,,DFA-14.11.16,,,04/Oct/16 10:27 AM,16/Nov/16 9:53 AM,16/Nov/16 9:53 AM
+Major,Bug,DFA-751,75110,[OUD] Parâmetros ou dados incorretos,rafael.croce,Done,Fixed,Operação_Assistida,OUD,,Portal,,,DFA-14.11.16,,,04/Oct/16 10:22 AM,16/Nov/16 9:52 AM,16/Nov/16 9:52 AM
+Major,Bug,DFA-750,75106,[OUD] Erro ao criar Membro,rafael.croce,Done,Fixed,Operação_Assistida,OUD,,Portal,,,DFA-14.11.16,,,04/Oct/16 10:07 AM,16/Nov/16 9:53 AM,16/Nov/16 9:53 AM
+Major,Bug,DFA-748,75009,Clientes sem e-mail não conseguem solicitar senha,daniel.braga,Done,Fixed,Operação_Assistida,OUD,,Portal,,,Não Planejado,,,03/Oct/16 11:55 AM,04/Oct/16 3:35 PM,05/Oct/16 3:48 PM
+Major,Bug,DFA-747,75008,[OUD] Formulário de pedido de senha.,,Done,Fixed,Operação_Assistida,OUD,Quality_Check,Portal,,,Não Planejado,,,03/Oct/16 11:52 AM,09/Dec/16 10:45 AM,22/Dec/16 4:16 PM
+Major,Bug,DFA-738,71993,[Congenere] - Erro no PnrAirModify - Retentar,rafael.croce,Done,Fixed,Quality_Check,,,Portal,,,MLS - 24.10,,,15/Sep/16 2:18 PM,25/Oct/16 1:39 PM,25/Oct/16 1:39 PM
+Major,Bug,DFA-737,71965,[ResetSenha] - Número Smiles Inválido,jonathas.souza,Done,Fixed,OUD,,,Portal,,,Não Planejado,,,15/Sep/16 8:40 AM,04/Oct/16 3:33 PM,04/Oct/16 3:33 PM
+Major,Bug,DFA-734,71718,[Estrangeiro] - Documento Inválido quando não informa o CPF,rafael.croce,Done,Fixed,OUD,,,Portal,,,MLS-15.09,,,13/Sep/16 11:09 AM,16/Sep/16 12:25 PM,16/Sep/16 12:25 PM
+Major,Bug,DFA-732,71630,[Configurations] - Voltando um dia na busca do Pricing,rafael.croce,Done,Fixed,,,,Portal,,,MLS - 25.09,,,12/Sep/16 4:30 PM,28/Sep/16 9:55 AM,28/Sep/16 9:55 AM
+Major,Bug,DFA-725,69739,[Cadastro] - E-mail substituído salvando com e-mail comercial,rafael.croce,Done,Fixed,,,,Portal,,,MLS-15.09,,,30/Aug/16 2:24 PM,16/Sep/16 12:25 PM,16/Sep/16 12:25 PM
+Major,Bug,DFA-723,68739,"[Busca Voo] - Atualização dados ""mais detalhes do voo""",rafael.croce,Done,Fixed,,,,Portal,,,MLS-15.09,,,24/Aug/16 3:53 PM,16/Sep/16 12:25 PM,16/Sep/16 12:25 PM
+Major,Bug,DFA-720,68707,"[Checkout] - Parcelamento voltando para ""à vista""",rafael.croce,Done,Fixed,,,,Portal,,,MLS-15.09,,,24/Aug/16 10:11 AM,16/Sep/16 12:26 PM,16/Sep/16 12:26 PM
+Major,Bug,DFA-715,68343,Taxa de Embarque Congenere - Informação errada no Gateway,jonathas.souza,Done,Fixed,,,,APP,Portal,,APP - 29.09,MLS-15.09,MLS - 25.09,19/Aug/16 9:22 AM,16/Sep/16 12:26 PM,29/Sep/16 4:34 PM
+Major,Bug,DFA-707,67732,Erro Calendário Gol Site,rafael.croce,Done,Fixed,,,,Portal,,,MLS-15.09,,,11/Aug/16 12:18 PM,16/Sep/16 12:26 PM,16/Sep/16 12:26 PM
+Major,Bug,DFA-706,67615,APP não processa pagamento no Android,jonathas.souza,Done,Fixed,,,,APP,,,APP - 29.09,,,10/Aug/16 11:21 AM,10/Oct/16 10:11 AM,10/Oct/16 10:11 AM
+Major,Bug,DFA-705,67551,Clube Smiles | Retirar botão cancelamento do Site,jonathas.souza,Done,Fixed,,,,Portal,,,Não Planejado,,,09/Aug/16 3:20 PM,09/Aug/16 7:03 PM,09/Aug/16 7:04 PM
+Major,Bug,DFA-690,66398,[Congenere] - Pagamento indiponível quando OperationCarrier@code esta nulo,rafael.croce,Done,Fixed,,,,Portal,,,MLS - 01.08,,,27/Jul/16 4:15 PM,01/Aug/16 10:43 AM,01/Aug/16 10:43 AM
+Major,Bug,DFA-670,65602,[Gift] - Mês e Ano no Gift não exibe lista completa de valores,jonathas.souza,Done,Fixed,,,,Portal,,,MLS - 01.08,,,15/Jul/16 4:27 PM,04/Aug/16 3:45 PM,04/Aug/16 3:45 PM
+Major,Bug,DFA-759,65587,[Produção] - Erro cancelamento da reserva,jonathas.souza,Done,Fixed,Operação_Assistida,,,Portal,,,Não Planejado,,,15/Jul/16 3:38 PM,10/Jan/17 11:04 AM,10/Jan/17 11:04 AM
+Major,Bug,DFA-652,64476,[RightNow] - A pesquisa de satisfação envia dados ocultos,victor.franzonatto,Done,Fixed,,,,RightNow,,,MLS - 25.09,,,01/Jul/16 8:29 PM,28/Sep/16 9:55 AM,28/Sep/16 9:55 AM
+Major,Bug,DFA-638,63045,EmissaoDB - Lock no Count,rafael.croce,Done,Fixed,,,,Portal,,,MLS - 13.07,,,20/Jun/16 11:53 AM,15/Jul/16 1:59 PM,15/Jul/16 1:59 PM
+Major,Bug,DFA-634,62550,Erro para compartilhar conteúdo pelo facebook,jonathas.souza,Done,Fixed,,,,Portal,,,Não Planejado,,,15/Jun/16 11:28 AM,18/Aug/16 11:39 AM,18/Aug/16 11:39 AM
+Major,Bug,DFA-621,61901,[Posso viajar em outra data] - Varias requisições iguais para a Navitaire,rafael.croce,Done,Fixed,,,,Portal,,,MLS - 13.07,,,08/Jun/16 8:33 AM,15/Jul/16 1:59 PM,15/Jul/16 1:59 PM
+Major,Bug,DFA-614,61242,"[RetroCredito] - Remover as opções de ""Todos os Aeroportos""",rafael.croce,Done,Fixed,,,,Portal,,,MLS - 13.07,,,02/Jun/16 1:22 PM,28/Jun/16 9:35 AM,05/Sep/16 5:30 PM
+Major,Bug,DFA-613,61241,[RetroCredito] - Limite de caracteres campo aeroporto,rafael.croce,Done,Fixed,,,,Portal,,,MLS - 13.07,,,02/Jun/16 1:08 PM,28/Jun/16 9:43 AM,12/Jul/16 9:09 AM
+Major,Bug,DFA-611,61142,[Reserva] - Reservas expiram antes do final do dia,,Done,Fixed,,,,Portal,,,MLS - 06.06,,,01/Jun/16 2:30 PM,08/Jun/16 9:37 AM,27/Sep/16 1:49 AM
+Minor,Bug,DFA-610,60984,[RightNow] - Alteração do diretório de instalação para C:\RightNow,jonathas.souza,Done,Fixed,,,,Portal,,,Não Planejado,,,31/May/16 10:27 AM,08/Jul/16 1:38 PM,08/Jul/16 1:38 PM
+Major,Bug,DFA-626,60960,"[APP] Está aparecendo erro na tentativa de reset de senha via app, precisa ser corrigido (ver imagem anexa).",jonathas.souza,Done,Fixed,APP,,,APP,,,APP - 15.08,,,31/May/16 7:55 AM,28/Jun/16 2:16 PM,15/Aug/16 6:24 PM
+Minor,Bug,DFA-609,60959,Problema - Débito de Milhas Shopping Smiles x Siebel,jonathas.souza,Done,Fixed,,,,Portal,,,Não Planejado,,,31/May/16 7:35 AM,28/Jun/16 9:42 AM,28/Jun/16 9:43 AM
+Minor,Bug,DFA-608,60903,[Cache] - Diminuir tempo do cache MEMBER_TICKET_HISTORY_CACHE,rafael.croce,Done,Fixed,,,,Portal,,,MLS - 13.07,,,30/May/16 9:04 AM,15/Jul/16 1:59 PM,15/Jul/16 1:59 PM
+Major,Bug,DFA-607,60787,[Callcenter] - Troca de Token entre o Callcenter e o usuário quando logado ao mesmo tempo,jonathas.souza,Done,Done,,,,Portal,,,Não Planejado,,,27/May/16 6:15 PM,15/Jun/16 3:27 PM,27/Jun/16 10:33 AM
+Major,Bug,DFA-598,57976,[MGM] - Não envia o código indicação - Cliente logado,,Done,Fixed,,,,Portal,,,MLS - 06.06,,,13/May/16 1:26 PM,07/Jun/16 7:43 PM,27/Sep/16 1:49 AM
+Minor,Bug,DFA-577,56711,Permitir a utilização da tecla ENTER para submeter o formulário de login,,Done,Fixed,,,,Portal,,,DFA-23.05.16,,,27/Apr/16 3:02 PM,02/Jun/16 7:35 PM,27/Sep/16 1:49 AM
+Major,Bug,DFA-576,56681,O site envia à ClearSale o e-mail anterior da alteração. Deveria enviar o novo e-mail,,Done,Fixed,,,,Portal,,,DFA-09.05.16,,,26/Apr/16 8:42 PM,11/May/16 4:41 PM,27/Sep/16 1:49 AM
+Major,Bug,DFA-574,56410,[RetroCredito Congênere] - Erros Siebel ignorados pelo Portal,,Done,Fixed,,,,Portal,,,DFA-09.05.16,,,20/Apr/16 9:46 AM,11/May/16 4:41 PM,27/Sep/16 1:49 AM
+Major,Bug,DFA-573,56185,[Compra Milhas] - Erro em valores baixos,,Done,Fixed,,,,Portal,,,DFA-23.05.16,,,17/Apr/16 7:05 PM,02/Jun/16 7:35 PM,27/Sep/16 1:49 AM
+Major,Bug,DFA-572,56161,"Buscar voos G3 com Ida hoje e Volta amanhã, os voos da Volta não exibem todos os horários, seguindo a mesma regra da Ida.",,Done,Fixed,,,,Portal,,,DFA-26.04.16,,,15/Apr/16 3:23 PM,28/Apr/16 11:11 AM,27/Sep/16 1:49 AM
+Major,Bug,DFA-571,56149,[Emissão G3] - Parcelamento da Taxa de Embarque no Site Smiles,victor.franzonatto,Done,Fixed,,,,Portal,,,Não Planejado,,,15/Apr/16 2:02 PM,04/May/16 2:20 PM,04/May/16 2:21 PM
+Major,Bug,DFA-568,56090,Erro na exibição do Calendário no Chrome + Windows 10,,Done,Fixed,,,,Portal,,,DFA-09.05.16,,,14/Apr/16 11:06 AM,11/May/16 4:41 PM,27/Sep/16 1:50 AM
+Major,Bug,DFA-566,56042,"[Compra Milhas] - Ao selecionar voucher, a quantidade de milhas selecionada é perdida",,Done,Fixed,,,,Portal,,,DFA-23.05.16,,,13/Apr/16 11:33 AM,02/Jun/16 7:35 PM,27/Sep/16 1:50 AM
+Major,Bug,DFA-644,55694,Erro no Pagamento da Emissão,jonathas.souza,Done,Fixed,,,,APP,,,APP - 15.08,,,07/Apr/16 4:09 PM,23/Jun/16 3:53 PM,15/Aug/16 6:25 PM
+Major,Bug,DFA-561,55625,[Voucher Emissão] - Cálculo errado das milhas ao aplicar o desconto,,Done,Fixed,,,,Portal,,,DFA-26.04.16,,,06/Apr/16 2:06 PM,28/Apr/16 10:34 AM,27/Sep/16 1:50 AM
+Minor,Bug,DFA-557,55607,[Passagens com Milhas] - Regras Tarifárias quando seleciona somente um dos trechos Congênere,,Done,Fixed,,,,Portal,,,DFA-23.05.16,,,06/Apr/16 9:56 AM,02/Jun/16 7:35 PM,27/Sep/16 1:49 AM
+Major,Bug,DFA-556,55604,[Checkout Emissão] - Código Promocional não aplica o desconto,,Done,Fixed,,,,Portal,,,DFA-26.04.16,,,06/Apr/16 9:27 AM,28/Apr/16 10:34 AM,27/Sep/16 1:50 AM
+Minor,Bug,DFA-555,55603,[Transferência de Milhas] - Melhoria da Mensagem quando a conta destino já recebeu o total de milhas anuais,,Done,Fixed,,,,Portal,,,DFA-09.05.16,,,06/Apr/16 9:23 AM,11/May/16 4:42 PM,27/Sep/16 1:50 AM
+Major,Bug,DFA-553,55379,[TransactionalMilesDebitFlow] - Não executa o Rollback em caso de erro,jonathas.souza,Done,Fixed,,,,Portal,,,,,,04/Apr/16 10:54 AM,05/Apr/16 4:26 PM,05/Apr/16 4:26 PM
+Major,Bug,DFA-549,55312,"Na tela de sucesso emissão do Congere, exibe o símbolo de Dolar ($) no Total em Dinheiro",jonathas.souza,Done,Fixed,,,,Portal,,,Não Planejado,,,01/Apr/16 3:25 PM,25/Apr/16 10:05 AM,25/Apr/16 10:05 AM
+Minor,Bug,DFA-548,55311,Deixa fazer Reserva mesmo exibindo reserva indisponível,,Done,Fixed,,,,Portal,,,DFA-23.05.16,,,01/Apr/16 3:22 PM,02/Jun/16 7:35 PM,27/Sep/16 1:49 AM
+Minor,Bug,DFA-547,55310,Erro bloqueio da tela quando popup é aberta,,Done,Fixed,,,,Portal,,,DFA-09.05.16,,,01/Apr/16 3:20 PM,11/May/16 4:42 PM,27/Sep/16 1:49 AM
+Major,Bug,DFA-546,55289,[Checkout] - Erro ao finalizar pagamento pagamento quando o País do Endereço esta vazio,,Done,Fixed,,,,Portal,,,DFA-09.05.16,,,01/Apr/16 8:50 AM,11/May/16 4:40 PM,27/Sep/16 1:50 AM
+Major,Bug,DFA-545,55214,Campo número do bilhete_Crédito no form de retroativo,,Done,Fixed,,,,Portal,,,DFA-23.05.16,,,30/Mar/16 7:11 PM,02/Jun/16 7:35 PM,27/Sep/16 1:49 AM
+Minor,Bug,DFA-539,55012,Erro de Javascript no Extrato (Minha Conta) quando não é necessário paginação,,Done,Fixed,,,,Portal,,,DFA-26.04.16,,,28/Mar/16 4:04 PM,28/Apr/16 10:33 AM,27/Sep/16 1:50 AM
+Major,Bug,DFA-536,54870,[Cancelar Voo] - The class 'br.com.smiles.portal.to.PassengerTO' does not have the property 'MiddleName',,Done,Fixed,,,,Portal,,,MLS - 06.06,,,24/Mar/16 4:49 PM,07/Jun/16 7:43 PM,27/Sep/16 1:49 AM
+Minor,Bug,DFA-513,54670,[RetroCredito] - Melhoria nas mensagens do Crédito Retroativo,,Done,Fixed,,,,Portal,,,DFA-26.04.16,,,23/Mar/16 11:07 AM,28/Apr/16 10:33 AM,27/Sep/16 1:49 AM
+Major,Bug,DFA-512,54660,"[G3RetroCredit] - Alteração do Label ""Erro na criação da transação""",,Done,Fixed,,,,Portal,,,DFA-26.04.16,,,23/Mar/16 9:48 AM,28/Apr/16 10:33 AM,27/Sep/16 1:49 AM
+Major,Bug,DFA-511,54654,Erro no Liferay para o Cliente 718644194,jonathas.souza,Done,Fixed,,,,Portal,,,Não Planejado,,,23/Mar/16 9:21 AM,27/Apr/16 8:34 PM,27/Apr/16 8:34 PM
+Major,Bug,DFA-502,54584,Informações de cadastro errada para clear sale - EmailPreferencial,,Done,Fixed,,,,Portal,,,DFA-26.04.16,,,22/Mar/16 10:24 AM,28/Apr/16 10:33 AM,27/Sep/16 1:50 AM
+Major,Bug,DFA-498,54367,[Meus Voos] - Erro na exibição do Voo pois é ordenado pelo TransactionDate,,Done,Fixed,,,,Portal,,,DFA-23.05.16,,,18/Mar/16 6:00 PM,02/Jun/16 7:35 PM,27/Sep/16 1:50 AM
+Major,Bug,DFA-497,54162,Cache no Portal,jonathas.souza,Done,Fixed,,,,Portal,,,Não Planejado,,,17/Mar/16 8:25 AM,26/Apr/16 9:14 PM,16/May/16 12:03 PM
+Major,Bug,DFA-494,53888,[SmilesConfig] - Relatório Reserva - Coluna Invertida - Data de criação x Data de processamento,jose.douglas,Done,Fixed,,,,Smiles Config,,,MLS - 22.08,,,15/Mar/16 7:46 AM,19/Aug/16 5:40 PM,19/Aug/16 5:40 PM
+Major,Bug,DFA-493,53887,[SmilesConfig] - Datas do PreBooking erradas quando criadas entre 00:00 e 03:00,daniel.braga,Done,Fixed,,,,Smiles Config,,,MLS - 01.08,,,15/Mar/16 7:45 AM,27/Jul/16 9:19 AM,04/Aug/16 10:05 AM
+Major,Bug,DFA-492,53886,[Reserva] - Data de Expiração errada quando criada entre 00:00 e 03:00,rafael.croce,Done,Fixed,Quality_Check,,,Portal,,,MLS - 22.08,,,15/Mar/16 7:43 AM,24/Aug/16 10:57 AM,24/Aug/16 10:57 AM
+Major,Bug,DFA-490,53807,Callcenter - Erro no Cancelamento Voluntário e Involuntário,victor.franzonatto,Done,Fixed,,,,Portal,,,DFA-27.03.16,,,14/Mar/16 9:40 AM,28/Mar/16 8:19 AM,28/Mar/16 8:19 AM
+Minor,Bug,DFA-487,52332,O Portal exibe aeroportos inativos o Siebel,,Done,Fixed,,,,Portal,,,DFA-26.04.16,,,08/Mar/16 9:15 AM,28/Apr/16 10:33 AM,27/Sep/16 1:50 AM
+Major,Bug,DFA-486,52331,"[ClubeSmiles] - Após passar pela pagina de regularização, as formas de pagamento sempre são exibidas nas outras opções",joao.henrique,Done,Fixed,,,,Portal,,,DFA-26.04.16,,,08/Mar/16 9:13 AM,28/Apr/16 10:34 AM,28/Apr/16 10:34 AM
+Major,Bug,DFA-485,52330,[ClubeSmiles] - Informação errada com conta Suspensa quando clica em ALTERAR FORMA DE PAGAMENTO,joao.henrique,Done,Fixed,,,,Portal,,,DFA-26.04.16,,,08/Mar/16 9:10 AM,28/Apr/16 10:34 AM,28/Apr/16 10:34 AM
+Minor,Bug,DFA-483,51841,[LIFERAY] Página de Cadastro apaga dados após apresentar qualquer mensagem de erro,rafael.croce,Done,Fixed,,,,Portal,,,MLS - 22.08,,,04/Mar/16 4:35 PM,24/Aug/16 10:58 AM,24/Aug/16 10:58 AM
+Major,Bug,DFA-482,51623,Regularização Clube com cartão ELO - creditCardType deve ser o mesmo da Adesão,,Done,Fixed,,,,Portal,,,DFA-26.04.16,,,04/Mar/16 9:59 AM,28/Apr/16 10:34 AM,27/Sep/16 1:50 AM
+Major,Bug,DFA-473,51553,[Congenere] - Erro no Pagamento quando o Amadeus não retorna o código no OperatingAirline,,Done,Fixed,,,,Portal,,,DFA-26.04.16,,,03/Mar/16 4:46 PM,28/Apr/16 10:33 AM,27/Sep/16 1:49 AM
+Major,Bug,DFA-468,51331,Mensagem de rejeição indevida,,Done,Fixed,,,,Portal,,,DFA-26.04.16,,,01/Mar/16 3:40 PM,28/Apr/16 10:33 AM,27/Sep/16 1:49 AM
+Major,Bug,DFA-467,51330,Erro crédito parcial de um trecho,jonathas.souza,Done,Fixed,,,,Portal,,,Não Planejado,,,01/Mar/16 3:39 PM,15/Mar/16 1:13 PM,10/May/16 5:25 PM
+Major,Bug,DFA-465,51308,Looping Infinito no Safari - Google Tag Manager,jonathas.souza,Done,Fixed,,,,Portal,,,Não Planejado,,,01/Mar/16 10:01 AM,28/Mar/16 4:04 PM,28/Mar/16 4:06 PM
+Major,Bug,DFA-464,51307,[Pricing] - TimeZone.getTimeZone synchronized bloqueando Threads,victor.franzonatto,Done,Fixed,,,,Portal,,,Não Planejado,,,01/Mar/16 9:52 AM,23/May/16 8:47 AM,23/May/16 8:47 AM
+Major,Bug,DFA-463,51306,Erro ao buscar Voos com aeroportos que não estejam cadastrados,,Done,Fixed,,,,Portal,,,DFA-26.04.16,,,01/Mar/16 9:44 AM,28/Apr/16 10:33 AM,27/Sep/16 1:50 AM
+Minor,Bug,DFA-462,51305,"Label ""null"" para pesquisa de aeroportos não cadastrados",,Done,Fixed,,,,Portal,,,DFA-26.04.16,,,01/Mar/16 9:43 AM,28/Apr/16 10:33 AM,27/Sep/16 1:50 AM
+Major,Bug,DFA-461,51304,Erro Javascript - Buscar Voo para aeroportos/cidades que não existem ou que o cliente não tenha clicado na lista de sugestões,,Done,Fixed,,,,Portal,,,DFA-26.04.16,,,01/Mar/16 9:40 AM,28/Apr/16 10:34 AM,27/Sep/16 1:50 AM
+Major,Bug,DFA-458,51125,Informações de cadastro errada para clear sale,luis.savioli,Done,Fixed,,,,Portal,,,Não Planejado,,,29/Feb/16 11:47 AM,05/May/16 10:11 AM,05/May/16 10:11 AM
+Major,Bug,DFA-438,50569,Erro ao identificar idade da Criança na data do último voo - Congenere,,Done,Fixed,,,,Portal,,,DFA-26.04.16,,,24/Feb/16 4:11 PM,28/Apr/16 10:33 AM,27/Sep/16 1:49 AM
+Major,Bug,DFA-436,49549,Alteração de Gênero (M/F) não atualiza o cadastro,,Done,Fixed,,,,Portal,,,MLS - 06.06,,,22/Feb/16 5:08 PM,07/Jun/16 7:44 PM,27/Sep/16 1:49 AM
+Major,Bug,DFA-421,47963,Clube Smiles | Adesão sem CPF (Smiles Pay),,Done,Fixed,,,,Smiles Pay,,,MLS - 01.08,,,17/Feb/16 10:29 AM,19/Jul/16 10:14 AM,27/Sep/16 1:50 AM
+Major,Bug,DFA-420,47940,Fuso Horário positivo busca Voos do dia anterior (Reclamação Facebook),,Done,Fixed,,,,Portal,,,DFA-26.04.16,,,16/Feb/16 3:49 PM,28/Apr/16 10:34 AM,27/Sep/16 1:49 AM
+Major,Bug,DFA-417,47908,Erro ao finalizar Pagamento através do CallCenter,,Done,Fixed,,,,Portal,,,DFA-09.05.16,,,16/Feb/16 10:32 AM,11/May/16 4:40 PM,27/Sep/16 1:49 AM
+Major,Bug,DFA-416,47542,Links da Home não clicáveis,jonathas.souza,Done,Fixed,,,,Portal,,,,,,11/Feb/16 1:11 PM,11/Feb/16 1:35 PM,11/Feb/16 1:35 PM
+Major,Bug,DFA-415,47540,Erro no Cancelamento de Voos Congenere quando há taxa de cancelamento,jonathas.souza,Done,Fixed,,,,Amadeus,,,,,,11/Feb/16 12:25 PM,13/Feb/16 2:30 PM,22/Feb/16 11:09 PM
+Major,Bug,DFA-414,47515,[Amadeus] - Bloquear Caracteres Especiais no Passaporte do Contato,,Done,Fixed,,,,Amadeus,Portal,,DFA-26.04.16,,,11/Feb/16 8:49 AM,28/Apr/16 10:34 AM,27/Sep/16 1:49 AM
+Major,Bug,DFA-403,47340,[BUS] - Erro de Lock em Threads - Fluxo Checkout,daniel.braga,Done,Fixed,,,,Portal,,,DFA-05.03.16,,,05/Feb/16 9:36 AM,09/Mar/16 10:54 AM,09/Mar/16 10:54 AM
+Major,Bug,DFA-400,46936,E-mail emissão G3 com informações incompletas,jonathas.souza,Done,Fixed,,,,Portal,,,DFA-18.02.16,,,01/Feb/16 4:00 PM,22/Feb/16 2:14 PM,22/Feb/16 11:09 PM
+Major,Bug,DFA-384,46760,Próximos Voos - Informação errada com voos Congenere com Carrier Name GOL no Siebel,jonathas.souza,Done,Fixed,,,,Portal,,,Não Planejado,,,28/Jan/16 2:00 PM,22/Feb/16 3:34 PM,22/Feb/16 3:34 PM
+Minor,Bug,DFA-377,46667,Label duplicados do Tooltip das Poltronas Especiais,,Done,Fixed,,,,Portal,,,DFA-26.04.16,,,26/Jan/16 3:56 PM,28/Apr/16 10:33 AM,27/Sep/16 1:50 AM
+Major,Bug,DFA-368,46491,Erro emissão Smiles&Money,adolfo.nunes,Done,Fixed,,,,Amadeus,Mobile,Portal,Não Planejado,,,21/Jan/16 10:37 AM,23/Feb/16 5:29 PM,23/Feb/16 5:29 PM
+Minor,Bug,DFA-339,46392,"Diminuição do nível do Log para ""Excedeu limite milhas""",victor.franzonatto,Done,Fixed,,,,Portal,,,DFA-02.02.16,,,19/Jan/16 8:32 AM,04/Feb/16 5:13 PM,04/Feb/16 5:13 PM
+Major,Bug,DFA-338,46383,G3 - Horario da partida errada de Voo Gol com parada após escolher o assento,katia.dantas,Done,Fixed,,,,Portal,,,DFA-02.02.16,,,18/Jan/16 4:27 PM,04/Feb/16 5:14 PM,22/Feb/16 11:09 PM
+Major,Bug,DFA-335,46214,Erro ao preencher vários passageiros - 414 Request URI too long ,katia.dantas,Done,Fixed,,,,Portal,,,DFA-18.02.16,,,15/Jan/16 3:10 PM,22/Feb/16 4:24 PM,23/Feb/16 3:26 PM
+Major,Bug,DFA-337,46163,Fraude Fase II - Vencimento Cartão não preechido,jonathas.souza,Done,Fixed,,,,Portal,,,Não Planejado,,,14/Jan/16 4:17 PM,17/Apr/16 5:33 PM,17/Apr/16 5:36 PM
+Minor,Bug,DFA-327,45994,Erro na tela de Dados dos Passageiros quando o cliente tem apostrofo no nome,katia.dantas,Done,Fixed,,,,Portal,,,DFA-02.02.16,,,12/Jan/16 10:56 AM,04/Feb/16 4:34 PM,22/Feb/16 11:09 PM
+Minor,Bug,DFA-325,45988,Erro no /login quando não tem o parâmetro urlCallback,katia.dantas,Done,Fixed,,,,Portal,,,DFA-02.02.16,,,12/Jan/16 9:45 AM,04/Feb/16 4:14 PM,04/Feb/16 4:14 PM
+Major,Bug,DFA-278,45543,Tela de regularização clube Smiles,,Done,Fixed,,,,Portal,,,DFA-26.04.16,,,04/Jan/16 4:07 PM,28/Apr/16 10:33 AM,27/Sep/16 1:49 AM

@@ -1,0 +1,37 @@
+Busca poderosa
+integrações de outros serviços
+DROPBOX, WUNDERLIST, GITHUB, GOOGLE DRIVE E ATÉ GIPHY:
+Possibilidades de integração
+aplicativos nativos são mais rápidos e funcionais
+ histórico de mensagens e integrações externas ilimitadas
+
+Menos emails e mais integração entre equipes!
+
+
+Com ele, qualquer pessoa pode criar uma sala de bate-papo, com múltiplos canais, dentro de uma empresa, com assuntos distintos e para grupos diferentes. Dentro de cada um desses canais, a ferramenta permite trocar mensagens de texto, documentos e compartilhar fotos ou vídeos.
+
+
+
+ Como tudo é arquivado, seu mecanismo de busca permite encontrar, facilmente, trechos de conversas que o usuário pode não ter visualizado anteriormente. 
+
+Integração com outras ferramentas
+Uma grande vantagem do Slack é a integração com outras soluções modernas que tem ganhado espaço nas empresas, como Dropbox, Asana, Hangouts, Twitter e Zendesk. Essa integração facilita a organização de documentos e o gerenciamento de tarefas que podem estar sendo utilizados em outra ferramenta.
+
+Uso entre empresas distintas
+Além da aplicação interna, ele permite a criação de canais com outras empresas. Aliás, isso é o que o diferencia de muitas outras ferramentas de comunicação, que não permitem o uso em diferentes organizações.
+
+O chanel funciona como um Twitter onde qualquer usuário pode criar e ou outros membros podem se inscrever. Dois canais são criados por padrão : #general que compartilha conteúdo acessível a todos os membros e #random que compartilha conteúdo exclusivamente do contexto de trabalho 
+
+
+Pode-se também compartilhar arquivos de todos os tipos, imagens, PDFs, arquivos em zip , etc.
+
+Um dos pontos fortes do Slack é o seu motor de busca interno. Todo o conteúdo utilizado por usuários em grupos de trabalho estão bem indexado e o motor de busca é uma grande ferramenta para navegar pelo conteúdo . A opção de busca permite filtrar os autores, os canais , grupos ou filtros sobre as propriedades de um documento.
+
+
+cipais motivos para sua empresa utilizar o Slack
+
+Centraliza a comunicação;
+Apresenta inúmeras possibilidades de Integrações e plug-ins;
+Aproveita as funcionalidades dos aplicativos. O Slack conta com milhares de integrações de outros serviços, como o o Trello. Dropbox, Google+, Hangouts, Mailchimps, IFTTT, Twitter.
+
+notificações pelas integrações

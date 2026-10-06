@@ -1,0 +1,10 @@
+Priority,Issue Type,Issue key,Issue id,Summary,Reporter,Assignee,Status,Resolution,Labels,Fix Version/s,Created,Resolved,Updated,Custom field (Código de Falha)
+Major,Bug,DSBL-167,56060,Transações de bonus de upgrade de categoria sem o Tier preenchido,luis.savioli,luis.savioli,Done,Fixed,Requer_Build,Não Planejado,13/Apr/16 4:10 PM,14/Dec/16 3:15 PM,14/Dec/16 3:15 PM,
+Major,Bug,DSBL-296,70933,Identificação do Fluxo de ativação de Conta,luis.savioli,luis.savioli,Done,Fixed,,Não Planejado,05/Sep/16 3:34 PM,30/Sep/16 3:45 PM,30/Sep/16 3:45 PM,
+Major,Bug,DSBL-24,45967,Saldo Divergente,luis.savioli,luis.savioli,Done,Fixed,Quality_Check,Não Planejado,11/Jan/16 4:48 PM,29/Sep/16 8:10 PM,29/Sep/16 8:10 PM,
+Major,Bug,DSBL-166,56059,"SS com o Status ""Validando"" e "" Em andamento""",luis.savioli,romulo.gimenes,Done,Fixed,Pendente_Build,DSBL - 30.06,13/Apr/16 3:54 PM,20/Jun/16 8:17 AM,20/Jun/16 10:36 AM,
+Major,Melhoria,DSBL-74,46671,Travar tela de programa,luis.savioli,,Done,Fixed,,Não Planejado,26/Jan/16 4:16 PM,08/Jun/16 9:31 AM,08/Jun/16 9:31 AM,
+Major,Melhoria,DSBL-73,46670,Web Service da tela de Simulador de BS,luis.savioli,romulo.gimenes,Done,Fixed,Pendente_Build,DSBL - 31.03,26/Jan/16 4:10 PM,29/Mar/16 8:37 AM,29/Mar/16 8:37 AM,
+Major,Bug,DSBL-45,45530,Travar a tela de administração de programa,luis.savioli,romulo.gimenes,Done,Fixed,Pendente_Build,DSBL - 31.03,04/Jan/16 3:19 PM,29/Mar/16 8:37 AM,29/Mar/16 8:37 AM,
+Major,Bug,DSBL-69,46534,Clientes tem Milhas club para subir de nível mas o upgrade não acontece,luis.savioli,bruno.serpeloni,Done,Fixed,,Não Planejado,22/Jan/16 8:47 AM,17/Mar/16 10:26 AM,17/Mar/16 10:26 AM,
+Major,Bug,DSBL-23,45824,Alteração automática involuntária no cadastro de Clientes,luis.savioli,luis.savioli,Done,Fixed,,DSBL - 31.03,08/Jan/16 2:13 PM,01/Mar/16 2:56 PM,09/Mar/16 10:44 AM,
