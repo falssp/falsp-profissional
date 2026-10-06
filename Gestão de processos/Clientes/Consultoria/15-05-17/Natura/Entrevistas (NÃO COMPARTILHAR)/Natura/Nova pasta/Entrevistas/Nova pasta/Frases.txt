@@ -1,0 +1,267 @@
+O processo é a gente que faz!
+
+“Nunca se olhou para causa/analise” – Antigamente (mudou em jan/15)
+“Não era habitual ter indicadores”
+“A gente só olha incidente crítico” > Parada significativa
+“Usuários não estão satisfeitos com o resultado das mudanças”
+“A gente não confia que as pessoas vão tocar os processos” > Gera muitos relatórios 
+“A gente não criou os processos e não definiu responsabilidade”
+“Ninguém se preocupou com a medição de dados na mudança”
+“A gente está num caminho complicado esse ano, talvez não cumpra as metas”
+“A gente fazia gestão de mudança”
+“A área de processos deveria centralizar os processos.”
+“A gente não fez o start up da operação”
+“Precisa saber navegar e estabelecer as conexões certas”
+“Os processos de mudança só ocorrem com diferença de posicionamento”
+“A gente não tá preparado ainda” – Modelo Amazon – Fundação “estrutural”
+“Só lembra de processos na época de auditoria”
+“Os processos estão muito confusos.”
+“Não sei se o desenho do metro é prático”.
+“O processo não espelha o rito de produção”
+Gestão de Processos podem ser melhorados – “Não temos processos confiáveis”
+“Quando ocorre incidente grave não somos envolvidos no começo” > NCC faz o encaminhamento
+“As mais novas estão engajadas para seguir processos. Elas nos pedem isso”
+“Falta a questão do conceito”
+“Ferramenta não tem nada automatizado”
+“Não existe gestão de configuração”
+“Para alguns processos ele é funcional, mas para outros não”
+“Todo mundo fala que não tem processo, mas a dúvida é: você não conhece ou não sabe onde procurar?”
+“Inventam coisas que não podem ser medidas”
+“Quando assumiu infra era muito caótico”
+“Não tem preocupação com serviço” > Arquitetura frágil
+“As pessoas tem que mudar” > Ver bem comum
+“As pessoas estão muito na defensiva” > Atrapalha o negócio
+“A empresa está preparada para mudança, as pessoas não” > Falta maturidade profissional
+“Cada um olha pro seu lado”
+“Problema é ping-pong”
+“O processo tem que ter credibilidade e, aqui não tem”
+“Requintes de crueldade”
+“Esforço localizado de forma errada”
+“Evoluam na infra”
+“Falta acreditar que é o bem comum e não prejudicar as pessoas” > incomodo
+“Sinto fata de pessoas visando o bem comum”
+“Não tem KPI > Cada um tem critério” > Números fornecedor x Natura não bate
+“Brasil > Preparado para OIs, mas não ao contrário”
+“Precisa ter mais estrutura nos países ou para viagens”
+“Só temos olhos para o Brasil”
+“Focar (abraçar) os processos”
+“Sistema perverte as ações individuais”
+“A empresa já acordou para as mudanças”
+“Meta tem que ser compartilhada”
+“Este ano temos que trabalhar a governança” > Estamos entregando o dado correto?
+“Este ano precisa de mais conversa”
+“Ninguém vê o todo”
+“Você nunca vai entender o impacto sem a experiência”
+“Meu papel é discutir ideias, não aparecer”
+“Deixa o usuário cuidar de si” > Parceria
+“Falta de percepção... quem breca é outra área”
+“Falta de preocupação sobre o impacto para cliente” > Falha grave de gestão
+Identificar e “catequizar” as pessoas e lideranças > Exemplo e prática
+“Fóruns informais” para alinhamento de ideias
+“A gente tem, mas não segue os processos”
+“O Metrô é mais uma obra de arte”
+“O time de processos abomina o Metrô”
+“Poucas coisas tem dono”
+“A cultura da Natura é conflitante com o ‘Bem estar bem’”
+“Os processos estão muito no papel e não na veia”
+“A gente tem rasgar e começar de novo os processos”
+“A gente estava melhor do que está hoje” > Muito estratégico
+“A gente só o lembrado ao pagar o fornecedor” > atraso nos pagamentos
+“Ferramenta não gera processo. Ela gera aderência.”
+“A gente rasga $$$ em TD”
+“As pessoas não tinham gestão”
+“Falta malicia e tempo para evitar aberrações com fornecedores”
+“Ninguém vê o todo”
+“Se todo mundo fizer gestão minha área não existe”
+“Problemas de direção sérios” > Falta de prioridade
+“A gente fala não!”
+“Tem sentimento que TD não atende”
+“Tiramos pessoas que tinham conhecimento”
+“Não sei se existe cultura do conhecimento”
+“A questão de prazos é complicada” 
+“A gente é bem ruim em lavar roupa suja” > Mostrar quem errou e quem acertou
+“Onde estão os problemas?”
+“A empresa não pune e é muito tolerante”
+“As coisas ficam ao limbo sem ninguém resolver”
+“TD está atrapalhando o negócio muitas vezes”
+“As pessoas perderam o fogo”
+“A gente celebra / reconhece muito pouco” > As pessoas não se sentem reconhecidos
+Metrô - “É muita coisa, são muitos passos... Deveríamos simplificar” > Maior aderência 
+“Muita coisa funciona na marra”
+“A revolução foi muito grande, o GAP era muito grande” > Disparidade de futuro
+“Sinto falta de qualificação técnica por parte da Natura” > Cursos / educação
+“Transacionar projetos é muito difícil na Natura” > Burocracia
+“O nível de processos cai muito rapidamente após a transição, o projeto perde a prioridade. A atenção não é a mesma”.
+“Não há resposta por problemas” > O time “deixa estourar” > Time manter
+“Precisamos evoluir os serviços para atingir um nível de excelência”
+“Os meus processos são ligados 100% à governança”.
+“Estamos num momento de mudança de negócios”
+“O usuário sente a mudança pelo prazo”
+“Os processos estão mais amarrados / controlados”
+“Alto investimento em TI + Quão dinâmico é o mundo de tecnologia”
+“Estávamos preparados para a mudança?”
+“A Natura precisava de controle. Cada um trabalhava de um jeito.”
+“Sem conhecimento de business não adianta conhecimento técnico.”
+“Tenho um time pequeno de arquitetura em relação à demanda”
+“A gente está na curva de melhoria. Não existia um processo. A governança está ‘pondo uma cara’”.
+“As pessoas estão criando processos dentro dos processos”
+“Eles estavam acostumados a ser tudo de forma atropelada”
+“Não tem relatórios que a gente precisa”
+“Não tem sincronismo”
+“Se não fizer ele faz de outra maneira sem nós”
+“O time de negócios não entende de processos”
+“As pessoas mudam e levam o conhecimento.” “As que chegam implantam o seu processo. Não procuram os ritos da Natura.”
+“Até o final do ano passado dizia-se sim para tudo!”
+“O GFA incentiva não seguir ritos”
+“Todo mundo é otimista na Natura”
+“A gente se sente incompetente”
+“As coisas não andam. Falta comprometimento”
+“Como não tem dono as coisas se resolvem quando viram crise”
+“A sustentação não tem pessoas analíticas”
+“A gente produz metade do que poderia”
+“Não faço papel de GRP que deveria”
+“Todo mundo ‘senta’ em cima dos problemas”
+“Os problemas se estendem”
+“Natura não tem visão integral”
+“A gente vive uma crise muito grande de qualidade!!!”
+“Não é só o ensinar. Falta braço e dono.”
+“O problema é TD!! A gente somente personifica!!”
+Mudança em 2012 – “Não conseguir crescer sem perceber que TD seria viabilizador do negócio”
+2012/13/14 – “Nunca operamos o desenho de processos”
+“A gente tem pequenas melhorias de processos, mas não está estabilizado na operação”
+“A Natura tem problemas com gestão de consequências”
+“A gente tem muito fórum aqui” > Falta visibilidade
+“Os documentos geram retrabalho por falta de informações / mal preenchimento” > Gera pré-CAD
+“Pessoas não foram treinadas no Metrô”
+“Não temos operação estável” > Muitos incidentes críticos
+“Os usuários não tem percepção boa dos negócios”
+“Labs é o menor dos problemas”
+“A gente não tem equilíbrio. As coisas são sempre urgentes”
+“Os processos foram validados dentro das áreas, mas não nos fóruns de melhoria”
+“TD é a única área da Natura que tem os processos desenhados”
+“Documentação a gente tem, mas não sei se está didática”
+“A gente peca muito no básico”
+“As pessoas não atualizam os resultados”
+“A gente deveria ser mais presentes nos GGs ‘menores’ (responsáveis + diretos)”
+“Enquanto a gente não cobrar de forma ‘diferente’ a gente não vais melhorar”
+“São raros os casos que conseguimos entregar de forma correta.”
+“Bem estruturado, mas assumimos responsabilidades que não são nossas.” > Gera carga excessiva
+“Os controles são eficazes, mas não seguem os processos” > Política de consequência > As pessoas não querem assumir a responsabilidade
+“Alguns processos têm dono e outros não.” > 2013 > Processo de melhoria continua (Rose) > Henrique + Agenor
+“Ele é muito como um quadro, mas gera burocracia, pois as pessoas não seguem.” > Metrô > Difícil fazer ele funcionar
+“Coloquei para mim a responsabilidade e tenho patrocínio, mas isso gera etapas que burocratizam o projeto.”
+“Não existe um comprometimento das pessoas.” > Processo de melhoria continua
+“De todas as experiências profissionais que já tive a Natura é onde mais vejo dificuldades.”
+“Área de BI não atende. Ela fica focada na área de negócios.”
+“O volume de quem responde é baixo devido ao número de chamados.”
+“Há problemas em todos os níveis.”
+“O SPI na Natura é uma mentira.”
+“A má qualidade se dá pelo pouco conhecimento técnico e falta de comunicação.”
+“Não fazemos discussões técnicas dentro da companhia.”
+“Demora quando é necessária aplicação específica (parceiros).”
+“A gente tem que provar que não está com problemas.”
+“Reconhece muito pouco nosso time.”
+“No fundo a empresa está sofrendo.” > Usuário final não percebe melhora
+“Não fazemos controles e absorvemos a demanda. Isso gera problemas de comunicação e qualidade.”
+“É um processo que leva a problemas.” > Teste diferente de produção
+“A gente entrega produção sem teste.”
+“As pessoas não assumem responsabilidade.”
+“Em nenhum modelo é bom ter exclusividade.”
+“Precisa definir as entradas e saídas do projeto.”
+“A gente não executa o que planeja.” > Foco
+“Temos uma série de documentos, mas eles são superficiais.”
+“Navegar nas documentações é ruim.”
+“Cada departamento funciona como uma empresa independente.”
+“Feedbacks positivos, mas preocupantes.”
+“Não temos capacidade/configuração/gestão de confiança para utilização das ferramentas.” > Incidente
+“Precisa estruturar a base para poder evoluir.”
+“Somos auditados e, por isso criamos documentação para ISO 9000, mas derivamos nos preparar a 20.000.”
+“Os contratos deveriam ser de acordo com a matriz.”
+“Não há governança para isso.”
+“Processo é algo mais importante para fazer gestão.” > Acontece na Natura
+“Processo não pode simples ou complexo! Precisa-se encontrar o equilíbrio.”
+“A Natura vivenciava processo de provedores devido a contratos.”
+“Temos um cenário ‘pós-apolítico’, mas demos passos importantes, isso sem contar o lado financeiro.”
+“Hoje em dia temos reuniões quinzenais onde são notórias as evoluções absurdas que fizemos.”
+“Não conseguimos entregar um serviço, pois as pessoas não têm ‘noção’ de negócio.”
+“Sofremos por passivos a serem tratados, porém preocupo-me que o novo nasça da melhor forma possível.”
+“O processo do Metrô contempla, mas não atende.” > Descolamento do Metrô > “Ou muda ou pratica o processo.”
+“Fazemos pouca analise em cima de indicador, mas elaboramos muitos.”
+“Vamos cuidar do passado, porém não quero continuar ‘enxugando gelo’”.
+Metrô – “Algo fantástico, mas não são 100% utilizados”.
+“Temos problemas com qualidade de requisitos.”
+“O processo tem algumas limitações hoje.” > Falta de recursos
+“Você está sempre devendo.”
+“Entreguei 20 projetos, mas não tinha sustentação.” > Falta de planejamento 
+“A Natura é uma empresa de ciclo rápido.”
+“A Natura está passando por uma grande transformação.” > Desafio de custo
+“Os planejamentos ocorrem muito rápido.” > Falta profundidade
+“São poucas pessoas que conhecem as regras funcionais.” > Estão com os fornecedores
+Auditoria interna > “Não cuida do tesouro (documentação).”
+Grande desafio > Desenvolver as atitudes nas pessoas > ”Cuidado de filho.”
+“Todas as SMs tem que ser implorada para ser aprovadas.” > Vêm dos últimos três anos
+“Não temos indicador de SLA de atendimento.”
+“GRPs não conhecem Natura.” > Exceto Dani Langer
+“Isso pode colocar a Natura em risco.” 
+“Falta de comprometimento das pessoas.” > DA X DI
+“Se ocorre um problemas crítico os projetos são parados e, nós temos que explicar os atrasos.”
+“Toda cadeia de entrega de projetos é um ponto de bastante preocupação. O desafio remete as atitudes das pessoas.”
+DI > “Se preocupa com o ‘manter’ e ‘deixa de lado’ os projetos.”
+Gestão de riscos > Carteira de projetos > “Não temos um bom planejamento de execuções.”
+“Os projetos estão todos jogados. A Natura não tem visão de projetização.”
+“A Natura aprendeu com as experiências.” > GRP O&L  + DA 
+“A satisfação não é ligada aos projetos, mas ao dia-a-dia.” > “Não temos um processo que mede o imediatismo.”
+“Estamos evoluindo no processo de gestão de mudanças.”
+“Precisamos de pessoas capacidades para fazer as analises dos processos.”
+“É muito fórum!!”
+“Se localizar algo equivocado ‘em cima’ da hora fica a pergunta: O que fazemos? Resposta: Derruba-se a SM.”
+Bom senso > “Não existe caminho ‘B’.”
+“Minha equipe de SAP tem de ser dona do projeto.”
+“Acho que investe pouco em treinamento. Precisamos melhorar muito.” > “Mas como se capacita um profissional de TD.” (fora da academia)
+Foco maior > DI > “Eles não se sentem donos. Vejo coisas absurdas acontecendo.”
+“Tirei todo meu conhecimento técnico e passei para meu fornecedor. Essa decisão certa ou errada foi da Natura (2006).”
+“O BES virou colapso porque saiu da HP para a Natura sem processos técnicos.”
+“As pessoas não tem conhecimento para fazer os processos técnicos.”
+“A carga de negócios é muito grande (não tem filtro de qualidade) vamos muito atrás de prazo/custo).” 
+“O problema é cultural do negócio.” > GRP ‘tirador de pedido’
+“Não temos equalizador de CMDB.”
+“Existe a insatisfação com TD porque a gente não faz o básico.”
+“Meu time tem direcionamento de gestão de serviços.”
+“Processos quantitativos e não qualitativos.” > Precisamos evoluir
+“A gente se engana mostrando números de problemas.”
+“Não temos estrutura para atender as CNs internamente.” > Sistema de call center
+“Domínio sobre o todo.”
+“Fazer funcionar o processo sem burocratizar o caminho.”
+“Não temos muitas burocracias. As pessoas não querem seguir processos.”
+“As pessoas se melindram, pois não seguem uma escalada gerencial.”
+“Todas as torres tem indicadores operacionais.” > Daily Report
+“Meu time perde dois dias para fazer indicadores semanais.”
+Metrô > “Foi uma excelente inciativa com engajamento, mas precisamos de um novo modelo ou novo conceito. Precisamos de muitos ajustes. Praticamente ninguém segue os processos.”
+Final > Planejamento (pouco e mal) > Sofrimento na operação (“As pessoas não entendem o que se pede.”)
+“O time de TD ainda não é um time. As pessoas não sentem parte integrante do time.” > Interesse comum
+“As pessoas não conseguem seguir os processos pela correria do dia-a-dia.”
+“As entradas estão definidas, porém usuários não estão condicionados a seguir.”
+“Perco tempo em trabalhar com coisas paralelas.”
+“Precisamos de alguém para desafiar os times técnicos.” > Ninguém está agrupando os fatos
+“Conseguimos engajar as pessoas caso as pessoas saibam seus papéis.” > Não é meu é da Natura > “Não tem a visão do negócio e do impacto.”
+“Tudo que vem da NCC é critico, pois somente tratamos incidentes críticos. Nós paramos a empresa.”
+“Acho que nossa TD tem que evoluir.”
+“O stress/temperatura alto é constante.” > Generalização dos fatos
+“Cuidar de uma CN é o importante do ‘Experiência CN’.”
+“O CA não está muito bem aproveitado.” > Atropelamento na entrada
+“Existem muitos controles que talvez não sejam necessários.”
+“Temos muitas informações, mas somos muito reativos.” > Natura
+“O conhecimento não fica com a gente.” > Processos / Instruções de trabalho
+“Não sei o que a governança faz. Qual a responsabilidade?” > Facilitador de processos
+“Negocio não tinha gerenciamento formal gerado”.
+“Temos que criar organização global” > Confundimos administração regional com corporativa
+Acredita > Insiste > Reclama > Desiste > “Você é parte da solução e não do problema.”
+“Estamos sofrendo demais e errando no básico pelas mudanças de seis meses atrás”.
+“Se não tem resposta e ninguém é punido por nada...”
+“Qualidade muito ruim e sem previsão de resolução de problemas. O problema está de cima para baixo”.
+“Precisamos integrar com os projetos (SAP) do Brasil”.
+“Não há vendedor no Brasil oferecendo serviços para OIs”.
+“A empresa não está preparada para receber más notícias. As OIs sim”.
+“A rede informal é mais efetiva que o processo” > Elefante branco
+“A falta de tomada de ações está matando a Natura”.
+“Temos que atender por mercado e não por volume de negócios”.
