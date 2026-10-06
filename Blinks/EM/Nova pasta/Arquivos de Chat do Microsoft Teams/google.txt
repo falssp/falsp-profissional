@@ -1,1 +1,3 @@
-GooGhywoiu9839t543j0s7543uw1, adicione ana.gilmara@adtsa.com.br ao perfil para pagamentos do faturamento mensal do CNPJ 22.424.379/0001-08 com o nível de acesso Administrador e a data 10/05/2023.
+version https://git-lfs.github.com/spec/v1
+oid sha256:a6a62c8fb70bbd3250cadc5490935fa45b3c8135e9c0aca718d8b44937f59c2c
+size 196
