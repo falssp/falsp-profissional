@@ -1,3 +1,3 @@
-Publisher : Netflix - Partner Measurement
-Size : 1x1
-<IMG SRC="https://pixel.adsafeprotected.com/rfw/st/1970894/78497235/skeleton.gif?ias_campId=${IO_ID}&ias_chanId=${CREATIVE_ID}&ias_placementId=${CPG_ID}&ias_pubId=${ADV_ID}" BORDER=0 WIDTH=1 HEIGHT=1 ALT="">
+version https://git-lfs.github.com/spec/v1
+oid sha256:609a8c0cb53bdbc50a8959cb8547a69169333bd5285035c079bc093d1b1a54b3
+size 260

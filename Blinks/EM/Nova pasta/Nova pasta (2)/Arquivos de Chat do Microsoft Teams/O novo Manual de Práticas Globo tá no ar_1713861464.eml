@@ -1,0 +1,728 @@
+Received: from AS8PR06MB8136.eurprd06.prod.outlook.com (2603:10a6:20b:3c9::14)
+ by PAXPR06MB8080.eurprd06.prod.outlook.com with HTTPS; Tue, 27 Aug 2024
+ 20:58:01 +0000
+Received: from AS9PR05CA0203.eurprd05.prod.outlook.com (2603:10a6:20b:495::13)
+ by AS8PR06MB8136.eurprd06.prod.outlook.com (2603:10a6:20b:3c9::14) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7897.25; Tue, 27 Aug
+ 2024 20:57:59 +0000
+Received: from AMS0EPF000001B0.eurprd05.prod.outlook.com
+ (2603:10a6:20b:495:cafe::d1) by AS9PR05CA0203.outlook.office365.com
+ (2603:10a6:20b:495::13) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7875.20 via Frontend
+ Transport; Tue, 27 Aug 2024 20:57:59 +0000
+Authentication-Results: spf=pass (sender IP is 13.111.124.136)
+ smtp.mailfrom=bounce.relacionamentoglobo.globo.com; dkim=fail (body hash did
+ not verify) header.d=relacionamentoglobo.globo.com;dmarc=fail action=none
+ header.from=relacionamentoglobo.globo.com;compauth=none reason=460
+Received-SPF: Pass (protection.outlook.com: domain of
+ bounce.relacionamentoglobo.globo.com designates 13.111.124.136 as permitted
+ sender) receiver=protection.outlook.com; client-ip=13.111.124.136;
+ helo=mta.relacionamentoglobo.globo.com; pr=C
+Received: from mx0a-0013cc01.pphosted.com (208.84.65.119) by
+ AMS0EPF000001B0.mail.protection.outlook.com (10.167.16.164) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.7918.13 via Frontend Transport; Tue, 27 Aug 2024 20:57:59 +0000
+Received: from pps.filterd (m0341935.ppops.net [127.0.0.1])
+	by mx0b-0013cc01.pphosted.com (8.18.1.2/8.18.1.2) with ESMTP id 47RH8hw9017296
+	for <felipe.lima@essencemediacom.com>; Tue, 27 Aug 2024 16:57:57 -0400
+Authentication-Results-Original: cs-test.com;	spf=pass
+ smtp.mailfrom=bounce-3518_HTML-447271158-1165776-100026232-9@bounce.relacionamentoglobo.globo.com;
+	dkim=pass header.s=10dkim1 header.d=relacionamentoglobo.globo.com;	dmarc=pass
+ header.from=relacionamentoglobo.globo.com
+Received: from mta.relacionamentoglobo.globo.com (mta.relacionamentoglobo.globo.com [13.111.124.136])
+	by mx0b-0013cc01.pphosted.com (PPS) with ESMTPS id 419jxp9wtb-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT)
+	for <felipe.lima@essencemediacom.com>; Tue, 27 Aug 2024 16:57:57 -0400 (EDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=10dkim1;
+ d=relacionamentoglobo.globo.com;
+ h=From:To:Subject:Date:List-Unsubscribe:List-Unsubscribe-Post:MIME-Version:
+ Reply-To:Message-ID:Content-Type; i=contato@relacionamentoglobo.globo.com;
+ bh=Y2l4r7uocPsDewKE8jfFM8M8SBCJm4+d/+VZamL7kdM=;
+ b=Aoy6qCfq2wFRYxkXTtXYo2lLs/O0h4HBMCgGGQ8DYUd6/8WI4ptFHby8cq/bFDxrW9IsUMiD3xQp
+   zzEptZKnbhhqIDPX1I7SeTCneWMfIpmGoI6HOHV6cQRTtMvfNz/2CLFJQ33o53HSuRo3RNqvICxW
+   CWga8S1Cwua8oTn9ZWqbHR3dHmm3xTDzYIljbUTurYWd1E6kT8olYIazD6KNIr5RYZZFDdEOxgDB
+   kIpl0qRMQ12YT0TjSSx31re/FIYSbs+NvELYTG6KYGwp9NB7oyp96rlNPd5FRZmJ5WmlPmItmY8O
+   VQtMrqOpzpq9PqQlzg6h0tfACT11e94BICsUng==
+Received: by mta.relacionamentoglobo.globo.com id hpouta2fmd4b for <felipe.lima@essencemediacom.com>; Tue, 27 Aug 2024 20:57:56 +0000 (envelope-from <bounce-3518_HTML-447271158-1165776-100026232-9@bounce.relacionamentoglobo.globo.com>)
+From: "Relacionamento Globo" <contato@relacionamentoglobo.globo.com>
+To: <felipe.lima@essencemediacom.com>
+Subject: =?UTF-8?Q?O_novo_Manual_de_Pr=C3=A1ticas_Globo_t=C3=A1_no_ar!?=
+Date: Tue, 27 Aug 2024 14:57:56 -0600
+List-Unsubscribe: <https://click.relacionamentoglobo.globo.com/subscription_center.aspx?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtaWQiOiIxMDAwMjYyMzIiLCJzIjoiNDQ3MjcxMTU4IiwibGlkIjoiMzUxOCIsImoiOiIxMTY1Nzc2IiwiamIiOiI5IiwiZCI6IjEwMDIxMyJ9.5m5_ANoSgFotfNo5U6qWI9o_clOpECv1kG7lXgY7mGw>, <mailto:leave-fd1a1775746c6b2531492c-fe2810747266037c741178-fe8e15717361037a73-fe3f15707564067b771772-ffc61d@leave.relacionamentoglobo.globo.com>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Reply-To: "Globo" <reply-fe8e15717361037a73-3518_HTML-447271158-100026232-9@relacionamentoglobo.globo.com>
+X-SFMC-Stack: 10
+x-job: 100026232_1165776
+Message-ID: <1e51ea5e-b9ce-4b01-8052-63f06c8238f5@dfw1s10mta809.xt.local>
+Content-Type: multipart/alternative;
+	boundary="4bksE4yU9C3a=_?:"
+X-Proofpoint-GUID: bbN1tJZizaDbgJ4Dko7kOJjzsoKgZ4MN
+X-Proofpoint-ORIG-GUID: bbN1tJZizaDbgJ4Dko7kOJjzsoKgZ4MN
+X-CLX-Shades: MLX
+X-CLX-Response: 1TFkXGRgYEQpMehcYEhwRCllEF2ZHblBoZXMSf39DEQpYWBdsZH4SXFoTYUh ocBEKeE4XZWYYS0lzcHlCZEwRCnhLF2xkfhJcWhNhSGhwEQp5TBdiXW9oGUNPR3JwfREKQ0gXBx sfExEKQ1kXBxgTGREKQ0kXGgQaGhoRCllNF2dmchEKWUkXGnEaEBp3BhkaGHEbGh8SEBp3BhgaB
+ hoRClleF2xseREKSUYXTVhFX1pHdUJFWV5PThEKSUcXeE9NEQpDThdISGQbXmBwQ1BLbkhNYB5u QUUdQWVgQFBZRWFNcB5nZBEKWFwXHwQaBBkdGQUbGgQbGhoEGxkeBBkZEBseGh8aEQpeWRdPawF gXREKTVwXGBIeEQpMWhdobV1NXREKTEYXb2trY2trEQpCTxdjUEEeUH1zQR9gaBEKQ1oXGxkEGx
+ sbBBsYHgQbGRwRCkJeFxsRCkJGF2lfZ1plcwVCHxNNEQpCRxdtTUZcY2BCHwUeaxEKQlwXGxEKQ ksXaxgba1Adc2dzfHgRCkJJF2VmGEtJc3B5QmRMEQpCRRdvfUNHaxpLWkRrfREKQk4XZWYYS0lz cHlCZEwRCkJMF2gBWVpZcBxOZ3psEQpCbBdtH0BaR0gffGNBTREKQkAXYVkBRUcBXU5efmwRCkJ
+ YF2BfbnluS3xFYhpiEQpNXhcbEQpaWBcbEQp5QxdoTwV4T1x9bEx9bhEKWUsXExkSGxEKWksXEx kSGxEKcGcXaBNhU2FEAWddWmgQGhEKcGgXaRl+HhJSenxuYk8QGhEKcGgXblNzY39/aBpnb04QG hEKcGgXb3oTXkIFR0JsTVIQBxkaEQpwaBdtQFtBQ05aHEBteBAaEQpwaBduTm0ZZH9wbl1IcBAa
+ EQpwaBdkcmlya1sTGGtAQhAHGRoRCnBoF2lGY2tZRW5tfB5oEAcZGhEKcGgXel4TWRh+YBhnAV4 QGhEKcGcXbH9aTFlySE1JWGgQBxkaEQpwfRdoX0V7WH1TT28YTRAaEQpwfRdvGUJGGGFwSX1MGB AaEQpwfRdhbkFaQmdJRmF+YhAaEQpwfRd6XBgeeltoRH0cYRAaEQpwfRdoYmkFQx9Yax15BRAaE
+ QpwfRdgbmlaeB9BZFwfSBAaEQpwfRdhRBwdSF1Cfhl+WhAaEQpwfRdlRQEfGk0eX3tgTRAaEQpw fRdvGE9EAXtAUgVTRRAHGRoRCnB9F2l9ZWN7QmBraW1dEAcZGhEKcH0XbENoUhoZRVIBQXkQBxk aEQpwfRdnRV9ZfkhAa0MZUxAaEQpwfRdob0N4bHpwRERFEhAHGRoRCnB9F2Nia3JJQ3hZQHxeEA
+ cZGhEKcH0XbWlnemB9QR9dRmYQGhEKcH0XZWRmQlp/Z19lYHMQBxkaEQpwfRdpQ0ZZRHhyfX1zc BAaEQpwfRdmR09iZGt/RF9wGxAHGRoRCnB9F254Sx5aWBtbGAEdEBoRCnB9F2l6SEVPbGdyZmtO EAcZGhEKcH0XekBZeFNTHFlaWUkQGhEKcH0XbU5yRx9dSEZLeGcQBxkaEQpwfRdjXUlIWVJAfxx
+ BWRAaEQpwfRdhHGlYc0JmXxtlRBAaEQpwfxdkU2RufR4YGk5cQBAbGh8RCnBfF2lJHnABZ0RpRl NsEAcZGhEKcF8XZ2NwXmIeG11SfW4QBxkaEQpwXxdiWRtCQ1pGUxhhBRAHGRoRCnBfF2F8HVJsX xJNZVNCEAcZGhEKcGwXYnx+GE0FYGd7THwQBxkaEQptfhcbEQpYTRdLESA=
+X-Proofpoint-SPF-Result: pass
+X-Proofpoint-SPF-Record: v=spf1 include:cust-spf.exacttarget.com -all
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.293,Aquarius:18.0.1039,Hydra:6.0.680,FMLib:17.12.28.16
+ definitions=2024-08-27_10,2024-08-27_01,2024-05-17_01
+X-Proofpoint-Spam-Details: rule=inbound_mail_notspam policy=inbound_mail score=0 mlxscore=0
+ bulkscore=0 spamscore=0 adultscore=0 mlxlogscore=424 impostorscore=0
+ suspectscore=0 clxscore=322 phishscore=0 malwarescore=0 lowpriorityscore=0
+ priorityscore=286 classifier=spam adjust=0 reason=mlx scancount=1
+ engine=8.19.0-2407110000 definitions=main-2408270154 domainage_hfrom=9381
+ domainage_replyto=9381
+x-Proofpoint-SPAM-Disposition: Inbox
+Return-Path:
+ bounce-3518_HTML-447271158-1165776-100026232-9@bounce.relacionamentoglobo.globo.com
+X-MS-Exchange-Organization-ExpirationStartTime: 27 Aug 2024 20:57:59.8823
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 6c106a62-41c7-448d-09b6-08dcc6daef3f
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 86cbe1bb-213f-4271-b174-bd59d03c87a3:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-SkipListedInternetSender:
+ ip=[13.111.124.136];domain=mta.relacionamentoglobo.globo.com
+X-MS-Exchange-ExternalOriginalInternetSender:
+ ip=[13.111.124.136];domain=mta.relacionamentoglobo.globo.com
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ AMS0EPF000001B0:EE_|AS8PR06MB8136:EE_|PAXPR06MB8080:EE_
+X-MS-Exchange-Organization-AuthSource:
+ AMS0EPF000001B0.eurprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 6c106a62-41c7-448d-09b6-08dcc6daef3f
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-MS-Exchange-Organization-BypassClutter: true
+X-Microsoft-Antispam:
+ BCL:0;ARA:13230040|1032899013|12012899012|3072899012|82310400026|2092899012|5063199012|4123199012|5073199012|7093399012|4022899009|69100299015;
+X-Forefront-Antispam-Report:
+ CIP:208.84.65.119;CTRY:US;LANG:pt;SCL:-1;SRV:;IPV:NLI;SFV:NSPM;H:mta.relacionamentoglobo.globo.com;PTR:mta.relacionamentoglobo.globo.com;CAT:NONE;SFS:(13230040)(1032899013)(12012899012)(3072899012)(82310400026)(2092899012)(5063199012)(4123199012)(5073199012)(7093399012)(4022899009)(69100299015);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 27 Aug 2024 20:57:59.2573
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 6c106a62-41c7-448d-09b6-08dcc6daef3f
+X-MS-Exchange-CrossTenant-Id: 86cbe1bb-213f-4271-b174-bd59d03c87a3
+X-MS-Exchange-CrossTenant-AuthSource:
+ AMS0EPF000001B0.eurprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AS8PR06MB8136
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.5709595
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.7897.019
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?QnBtK0VWazFnNXo2WXhVaS92c1Y5Y2pqb0hrT0hQREIvNit0bkVSeHQxbWZI?=
+ =?utf-8?B?MWt0VzZMWUVFbXZKL0hpUXNBMVQ2S2xUQVRvb0crY3dxR1dMNHkwMFFPUnIw?=
+ =?utf-8?B?NTJlMytZUkx1ZlVBOC9tYUdqdVBJVklxdG10VkFYaTc1Ymttd1drSmlIaEQy?=
+ =?utf-8?B?bFFBYmloZDVsSlVMMVR4eC9NUTl6R1hnbVJoMjZrRld1VEN6TUJlRFQxWmZD?=
+ =?utf-8?B?MFN6K2tVS3dqcWNqOXVCYzhpZElXcUxaZXJ1YlU4aUd1M0RLVFhyaXB5ODBI?=
+ =?utf-8?B?TWxkelZjbGh5NDN0dnI2MjYyenI1QjVXVEkwQ095VkN5NHp6RmtIUHF1ckRX?=
+ =?utf-8?B?Q3dkQUdReWpibThvRDhQanlUZVNXeS9pNFcwdHIvaEx1VE11UGtxWkg0UXh3?=
+ =?utf-8?B?cWpybDh6aG9ZbjFEL3lnempkOFgraXJNdWZDd1BKS1l2NEVNRWRRRUsvcXZO?=
+ =?utf-8?B?cERQeCtxVTJ2MEN6dkMzcWp6OXl5YUpFdll0ZkgyMTNGL0xTbjlmbG5RZmhC?=
+ =?utf-8?B?QXpuV0Rkb0hXanV1eGg5UTBLTG5EY1dhZGo2dGducHJpUUFUTUZqOEhHYnUw?=
+ =?utf-8?B?Rk5qOW9odDlvNDVla0NGL1ZwK2pNNG9BSVc4bGhvMk4yZGEzOVRUOGd5UGgz?=
+ =?utf-8?B?TW1lVUdFWTU4eTQvaWJJTHkxNU10OEhZdDlIbnM2NkVaK2hoc3VrdWRGQkJ1?=
+ =?utf-8?B?cjRVMUswdE1YbnBLT3lpTDdzeEUrMTlIMEU4WHg4ZWhSVVV4NVpaektqN081?=
+ =?utf-8?B?WjE3aFFkbFNjc1JpYUpZMTVab2toY2p4aUNyYXl6VTJGM2NqVkFyM1d6WEVh?=
+ =?utf-8?B?MnJqdHowMCtrMFZzQ0Rlb3lTVUY2RVNFU2hhcU9yOTNEZVduMk5OMkFqTXhr?=
+ =?utf-8?B?cURPYTA0T3psV0FCZlhqTGZRY2pRWVpQVE80SzBCdUo2VUpMTDZjanVBR2ZF?=
+ =?utf-8?B?ZkFJM1VyMmZBZlZna2pORGxYZnVBL1VhWHg5SzNOUWxvZnRYc0VJRVZRWHA5?=
+ =?utf-8?B?RjhZQWFrdDhqMlRMaWNsNmNicTZkbi9YcmNzdTRrQkkrWTMvVE8xenFkdi83?=
+ =?utf-8?B?VlZPVUVnYUdMQ05hNHFXSGlXZzVXaHZTT3FCOUtmSmlNTlc4TVRqWDBnTFV4?=
+ =?utf-8?B?VkZOaWF4amp5aFhOSW43dnZDOXd3QXREcldyR3ZpclhIRjB0dVFPelZCT0ND?=
+ =?utf-8?B?M0dZL2lpMnVqSE5rQnNkMkxPQTFKNFhKRGhNd0pOWlRLT2pQTWtFcnMzaWtG?=
+ =?utf-8?B?eW5kYzhUeE5GMmxSclZpeDd3anpEdENrVTRsTTY2aDJHMGFxOUc3NmJ3NHN3?=
+ =?utf-8?B?aXA5K3VOSlMrdWVCdmswM1ZvMkg4enNsaUR4bGxZVmlVMUJzYVhaeFZoWWdT?=
+ =?utf-8?B?TzUrOFBRM0owVjNnU1IvZ0hIZjlRTEpUcUtWelBHSGdBQ1ZaWE10S3NISVE4?=
+ =?utf-8?B?QTlJZU5UaGYwV2NTYzlYSHh0RGxCdFpjcStGUE90TmN0aFhoN2pyOWM3T2Jz?=
+ =?utf-8?B?bnRIc2RqSmxWTUNleUVKaWY0bkhoM1dQZWxWYVZ1aDlSVk5uY2crTjJacW1H?=
+ =?utf-8?B?WG9QUmp6NkNoanF0WWowQU5EVTNlQTdDcXh5TnBrc00wNlpWa2NOMFk2cWZR?=
+ =?utf-8?B?TUZoa0ZORFF0L1FrODhFNTF6bmZYL05EbTdtWDl5TWRINHlkMWRNTDAwN1BS?=
+ =?utf-8?B?TjEwUnI3d2U0Um5XbFRpeTdHdUVSc1dnVk10L0srNkwvM3lwb0Y3OHRZdE1a?=
+ =?utf-8?B?OFAzc0g1dGtjUEFzZHZBTDEwNHJlTWtpVHZ0RFBSN0NvWDJHOTcvandRMlpQ?=
+ =?utf-8?B?bXJDcm50SFE3SFNGUVVudVJkdjdqL3ZxejFTUmFHV3o3NzRDQVFXQlZyeHUv?=
+ =?utf-8?B?OENjMnp4aVU5T2hlbFhiVzJLaTl5SzZzVWNGaHhueUsyMG9HNWVXMmVIVHpR?=
+ =?utf-8?B?Sk9Ib1ZKTkNsWGFNQ1c1T0lXNjc2QWhuYW5XWkoxeXJtcU1pNXhXOVhpRVlr?=
+ =?utf-8?B?REFwSlJ1SndhSCt6blFyeXBRb0JSZEZSYlJlSkRjVnhJM2dMcXluakx3ak41?=
+ =?utf-8?B?VVFUL1FGUExMZC81UzMzVFBPTmFzdlRENDZMRTVGenM0UTVycGpTMlVNb2d1?=
+ =?utf-8?B?SHpUNnVlbUJvenhzRnA4c3hHeDJXN3VySk9TVjdmb2lmQmRJRWs4NWpyUDV0?=
+ =?utf-8?B?VDFqRGRsV0I2Y2h2NWlJeFZOeGxwRVpwWGF5dkxlUVVsdy9nU1V1K0VwclI4?=
+ =?utf-8?B?S3dtaDNSS0srZkoxZC9hYjh6L1pRRHVJUVRyelhiWFFleklYSVcvN0gyVWgw?=
+ =?utf-8?B?SDR2ZFJJWDNxcC9pYVZPSytNNlc2S1l6a0QwcTlQT0xaNlVMejRZcXozMWpT?=
+ =?utf-8?B?Uy92bk1lZy9PRVNFZDJxYStWQ2ZBSS9RNzZJazdMcG1UNVZFd0NlNmJKbnR6?=
+ =?utf-8?B?UjZLekR0N2VPbzJ5SjVpT3JLWG1IQ3hMTi9UYzJoVGJoQ3lZd0w4TnVuY1dC?=
+ =?utf-8?B?T0h4cnkwbjJ5cmtWVVpEU21LeFRWeGpZbmtsNXB5UTFDTHNuQXcxT3dXVGFp?=
+ =?utf-8?B?MllWWFdrT1pESDJ6ZUI1VnUwOFJsMkdVVmk0ZmpNbytqdjkzYTB5d3BUU05Z?=
+ =?utf-8?B?SkU4a01pRkFXd3hycHZsdUtvTTJJcWZRcVJ1dFB0anRhd3hUdDZTTlo3VmFn?=
+ =?utf-8?B?aTIxUzJuU1RzcHRBVlhyUzdla1hXTEx1VFJTbk1uWS9mU0tZWVhMdkxiWWVY?=
+ =?utf-8?B?TzdxQmJBTWJ1eEo4enAwaHVpQ2dlU2d4MzhlVjVEQnAyR2syL2xDamxqMkI0?=
+ =?utf-8?B?YU84TWxRNVI5U05IK3o2ZE11SG0xbERsZTVPT3YvNjJRL2tGWERMMDZzM1M3?=
+ =?utf-8?B?Vm50WDRwK0V1VnJCcThNS2lDZ0ZOUUxIZXFsUkliZnpyZmw5NFFnS0pkc3Mr?=
+ =?utf-8?B?UUdmTTZjTXRvbTFjbXZtUHd2MzJYZkpEMWVwUWhWdmk3RSt5ZTRoZzhSOVNF?=
+ =?utf-8?B?SjlOYUZuL2dONjk0YkZUaDl0bGZiQW1PblcwV0t3OXAwUGN4QnJ1dStPdTIr?=
+ =?utf-8?B?VDQ4SHBCemNpL2Z4SmQyTy9WTXhDUkp0dzV5anNHUjVOamR6dFEwdkZvODhh?=
+ =?utf-8?B?WkZFemtQYjZuM0VqOGxPY2tXWkN0WkFkSlhHejI4L0JaOStnWmJVS1pZcVhJ?=
+ =?utf-8?B?NStwTlp1VzJrcjJmR0d1KzlvUGh1ejRmQlR0RzMvLzBJa0Q1TUpCd2VwM1No?=
+ =?utf-8?Q?w8eoOBu567WF1nZcZ4EZj5K9m5kWdEb/MLRQctFXGVY0QRP?=
+MIME-Version: 1.0
+
+--4bksE4yU9C3a=_?:
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+External:
+
+Vem conferir todas as novidades.
+Para garantir que nossos e-mails cheguem em sua caixa de entrada,
+adicione contato@relacionamentoglobo.globo.com<mailto:contato@relacionament=
+oglobo.globo.com> aos seus contatos.
+
+Caso n=C3=A3o esteja visualizando corretamente, clique aqui.<https://urldef=
+ense.com/v3/__https://view.relacionamentoglobo.globo.com/?qs=3Decf679381323=
+9a4d3afc1e0625d2c1d153339f352735b7a1c16151b3f52e89f42b5f1ac5813a6eb9be6d8fd=
+092b4deec80e08ba3c71f79d3c6f3363611930635c4ccab1b40fbb160fb45ae69a9cc5ee3__=
+;!!MOA0!f2VFKaqqClkIeS6w4lZs3Fw_tDHiogOicdNsKVij51kxHBJetqiXKJ6UT-el45-fX9i=
+GfgdBzMMr2jRSbizRgvUmsZlqVlDSl2ki4QY$>
+
+
+
+O Novo Manual de Pr=C3=A1ticas
+Comerciais da Globo
+
+        [T=C3=A1 no ar!]
+
+[https://image.relacionamentoglobo.globo.com/lib/fe3f15707564067b771772/m/1=
+/49aef50e-3a91-4ee6-8b3a-4c1c28d8cdb9.png]
+
+        L=C3=A1 voc=C3=AA encontra informa=C3=A7=C3=B5es sobre:
+
+        =E2=80=A2 Regras Comerciais
+=E2=80=A2 Elenco Globo
+=E2=80=A2 Opera=C3=A7=C3=B5es Comerciais
+e Financeiras
+=E2=80=A2 Formatos Comerciais
+
+E muito mais!           [https://image.relacionamentoglobo.globo.com/lib/fe=
+3f15707564067b771772/m/1/1e123363-bc1e-4d91-89e8-089f1f40f615.png]
+
+        [Acesse J=C3=A1] <https://urldefense.com/v3/__https://click.relacio=
+namentoglobo.globo.com/?qs=3Df370f9da50392f1b4ffbe1b2b9590cdf93d94000db4a52=
+6e9e7f400893c276dc2df66eaa23cf208b762b3dbaa9d6c6d061f02a2bb2094494__;!!MOA0=
+!f2VFKaqqClkIeS6w4lZs3Fw_tDHiogOicdNsKVij51kxHBJetqiXKJ6UT-el45-fX9iGfgdBzM=
+Mr2jRSbizRgvUmsZlqVlDSyF2Z2MA$>
+
+[https://image.relacionamentoglobo.globo.com/lib/fe3f15707564067b771772/m/1=
+/c8f8519c-4dbd-4611-8e79-7ff05397f6cf.png]
+
+
+Conhe=C3=A7a nossos canais:
+
+
+[Globo Ads]<https://urldefense.com/v3/__https://click.relacionamentoglobo.g=
+lobo.com/?qs=3Df370f9da50392f1b35ab863c38f9d2d058ee4847da9fd3a0ee8eb9c68d66=
+4caf7f4d885d838773a495f14b6f4a0495b5993615ec911c7f6f__;!!MOA0!f2VFKaqqClkIe=
+S6w4lZs3Fw_tDHiogOicdNsKVij51kxHBJetqiXKJ6UT-el45-fX9iGfgdBzMMr2jRSbizRgvUm=
+sZlqVlDSSVR5ylw$>
+
+|
+
+[@negociosglobo]<https://urldefense.com/v3/__https://click.relacionamentogl=
+obo.globo.com/?qs=3Df370f9da50392f1b83d8989af39ec03656f9fe135da8191e8a44cad=
+d58d492972ee9439e29a3c1f5f5b990e04a0cb4c46d01db212e54eebc__;!!MOA0!f2VFKaqq=
+ClkIeS6w4lZs3Fw_tDHiogOicdNsKVij51kxHBJetqiXKJ6UT-el45-fX9iGfgdBzMMr2jRSbiz=
+RgvUmsZlqVlDSoA7jJ8Y$>
+
+|
+
+[LinkedIn - Globo Ads]<https://urldefense.com/v3/__https://click.relacionam=
+entoglobo.globo.com/?qs=3Df370f9da50392f1b8dd4113ae6b65a99a2725cd00d0ef6c98=
+3cd35022f4d2828bde98ef12dca22c8452e398f87f313ad8ad76ddf0fdf2f84__;!!MOA0!f2=
+VFKaqqClkIeS6w4lZs3Fw_tDHiogOicdNsKVij51kxHBJetqiXKJ6UT-el45-fX9iGfgdBzMMr2=
+jRSbizRgvUmsZlqVlDSibDDnPo$>
+
+|
+
+[TikTok - Globo Ads]<https://urldefense.com/v3/__https://click.relacionamen=
+toglobo.globo.com/?qs=3Df370f9da50392f1b06a79c5af84809df8b391d752e3517217cf=
+f6ce39f228f337279ab93d36d75e78598bd649ba05b7c30db0284da3e3d19__;!!MOA0!f2VF=
+KaqqClkIeS6w4lZs3Fw_tDHiogOicdNsKVij51kxHBJetqiXKJ6UT-el45-fX9iGfgdBzMMr2jR=
+SbizRgvUmsZlqVlDSDoGjH34$>
+
+Se n=C3=A3o deseja mais receber comunica=C3=A7=C3=B5es Globo, descadastre-s=
+e.<https://urldefense.com/v3/__https://click.relacionamentoglobo.globo.com/=
+?qs=3Df370f9da50392f1b141ee6ea6fac54155ecf7ad5e9e0a42af170d685b85b1c97cedce=
+b8e27d4ad13e06f70684bf315ce881df437847c93f36981f20c7b4151e7__;!!MOA0!f2VFKa=
+qqClkIeS6w4lZs3Fw_tDHiogOicdNsKVij51kxHBJetqiXKJ6UT-el45-fX9iGfgdBzMMr2jRSb=
+izRgvUmsZlqVlDSCgvVBLY$>
+
+
+
+
+--4bksE4yU9C3a=_?:
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd"><!----><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1,=
+ maximum-scale=3D1, user-scalable=3D0">
+<!--[if mso]>    <style type=3D"text/css">    /* Begin Outlook Font Fix */ =
+   body, table, td {    font-family: Arial, Helvetica, sans-serif ;    font=
+-size:16px;    color:#000000;    line-height:1;    }    /* End Outlook Font=
+ Fix */    </style>    <![endif]--><!--[if gt mso 15]>   <style type=3D"tex=
+t/css" media=3D"all">   /* Outlook 2016 Height Fix */   table, tr, td {bord=
+er-collapse: collapse;}   tr { font-size:0px; line-height:0px; border-colla=
+pse: collapse; }   </style>   <![endif]--><!--[if (gte mso 9)|(IE)]>  <styl=
+e type=3D"text/css">   table {   border-collapse: collapse;   border-spacin=
+g: 0;    mso-line-height-rule: exactly;    mso-margin-bottom-alt: 0;    mso=
+-margin-top-alt: 0;    mso-table-lspace: 0pt; mso-table-rspace: 0pt;}   </s=
+tyle>  <![endif]-->
+</head>
+<body>
+<!-- Yellow caution banner -->
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" widt=
+h=3D"100%">
+<tbody>
+<tr>
+<!-- Remove the next line if you don't want the Yellow bar on the left side=
+ -->
+<td style=3D"background:#ffb900;padding:5pt 2pt 5pt 2pt"></td>
+<td width=3D"100%" cellpadding=3D"7px 6px 7px 15px" style=3D"background:#ff=
+f8e5;padding:5pt 4pt 5pt 12pt;word-wrap:break-word">
+<div style=3D"color:#222222;"><span style=3D"color:#222; font-weight:bold;"=
+>External:</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<div><style type=3D"text/css">
+div.preheader=20
+{ display: none !important; }=20
+</style>
+<div class=3D"preheader" style=3D"font-size: 1px; display: none !important;=
+">Vem conferir todas as novidades.
+</div>
+<!--Header-->
+<table bgcolor=3D"#fefefe" width=3D"600" border=3D"0" align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" style=3D"background-color: #fefefe;">
+<tbody>
+<tr>
+<td>
+<table cellpadding=3D"0" align=3D"center" cellspacing=3D"0" width=3D"600" s=
+tyle=3D"background-color: transparent; min-width: 100%; " class=3D"stylingb=
+lock-content-wrapper">
+<tbody>
+<tr>
+<td style=3D"padding: 12px 5px; " class=3D"stylingblock-content-wrapper cam=
+arker-inner">
+<div style=3D"text-align: center;"><span style=3D"font-family: tahoma, aria=
+l,helvetica,sans-serif; font-size: 13px; text-align: center; color: rgb(85,=
+ 85, 85);">Para garantir que nossos e-mails cheguem em sua caixa de entrada=
+,<br>
+adicione <a alias=3D"email de envio" href=3D"mailto:contato@relacionamentog=
+lobo.globo.com" style=3D"color: rgb(85, 85, 85);">
+contato@relacionamentoglobo.globo.com</a> aos seus contatos.<br>
+<br>
+Caso n=C3=A3o esteja visualizando corretamente,&nbsp;<a data-linkto=3D"othe=
+r" href=3D"https://urldefense.com/v3/__https://view.relacionamentoglobo.glo=
+bo.com/?qs=3Decf6793813239a4d3afc1e0625d2c1d153339f352735b7a1c16151b3f52e89=
+f42b5f1ac5813a6eb9be6d8fd092b4deec80e08ba3c71f79d3c6f3363611930635c4ccab1b4=
+0fbb160fb45ae69a9cc5ee3__;!!MOA0!f2VFKaqqClkIeS6w4lZs3Fw_tDHiogOicdNsKVij51=
+kxHBJetqiXKJ6UT-el45-fX9iGfgdBzMMr2jRSbizRgvUmsZlqVlDSl2ki4QY$" style=3D"co=
+lor: rgb(85, 85, 85);" title=3D"">clique
+ aqui.</a> </span></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!--1_Table-->
+<table bgcolor=3D"#fefefe" width=3D"600" border=3D"0" align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" style=3D"background-color: #fefefe;">
+<!--ESPA=C3=87O-->
+<tbody>
+<tr>
+<td>
+<table width=3D"600" border=3D"0" align=3D"center" cellpadding=3D"0" cellsp=
+acing=3D"0">
+<tbody>
+<tr>
+<td height=3D"54">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!--HEADER-->
+<tr>
+<td>
+<table width=3D"600" border=3D"0" align=3D"center" cellpadding=3D"0" cellsp=
+acing=3D"0">
+<tbody>
+<tr align=3D"center">
+<td width=3D"30">&nbsp;</td>
+<td>
+<p style=3D"font-family: Arial, Helvetica, Sans-serif; color: #000000; font=
+-size: 32px; font-weight: BOLD; line-height:48px; letter-spacing: 0px; text=
+-align: left;">
+O Novo Manual de Pr=C3=A1ticas<br>
+Comerciais da Globo </p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!--IMG-->
+<tr>
+<td>
+<table width=3D"600" border=3D"0" align=3D"center" cellpadding=3D"0" cellsp=
+acing=3D"0">
+<tbody>
+<tr align=3D"left">
+<td width=3D"15">&nbsp;</td>
+<td><img data-assetid=3D"9766055" style=3D"display: block; margin: 0; paddi=
+ng: 0; border: none;" src=3D"https://image.relacionamentoglobo.globo.com/li=
+b/fe3f15707564067b771772/m/1/ee52e301-b4b1-4160-b1b8-807a9617bb61.png" heig=
+ht=3D"72" width=3D"306" alt=3D"T=C3=A1 no ar!">
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!--ESPA=C3=87O-->
+<tr>
+<td>
+<table width=3D"600" border=3D"0" align=3D"center" cellpadding=3D"0" cellsp=
+acing=3D"0">
+<tbody>
+<tr>
+<td height=3D"38">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!--IMG-->
+<tr>
+<td>
+<table width=3D"600" border=3D"0" align=3D"center" cellpadding=3D"0" cellsp=
+acing=3D"0">
+<tbody>
+<tr align=3D"left">
+<td><img data-assetid=3D"9766057" style=3D"display: block; margin: 0; paddi=
+ng: 0; border: none;" src=3D"https://image.relacionamentoglobo.globo.com/li=
+b/fe3f15707564067b771772/m/1/49aef50e-3a91-4ee6-8b3a-4c1c28d8cdb9.png" heig=
+ht=3D"335" width=3D"600" alt=3D"">
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!--ESPA=C3=87O-->
+<tr>
+<td>
+<table width=3D"600" border=3D"0" align=3D"center" cellpadding=3D"0" cellsp=
+acing=3D"0">
+<tbody>
+<tr>
+<td height=3D"40">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!--TEXTO-->
+<tr>
+<td>
+<table width=3D"600" border=3D"0" align=3D"center" cellpadding=3D"0" cellsp=
+acing=3D"0">
+<tbody>
+<tr align=3D"left">
+<td width=3D"60">&nbsp;</td>
+<td><font face=3D"Arial, helvetica, sans-serif" style=3D"color: #000000; fo=
+nt-size: 22px; font-weight: bold; line-height:28px;">L=C3=A1 voc=C3=AA enco=
+ntra informa=C3=A7=C3=B5es sobre:
+</font></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!--ESPA=C3=87O-->
+<tr>
+<td>
+<table width=3D"600" border=3D"0" align=3D"center" cellpadding=3D"0" cellsp=
+acing=3D"0">
+<tbody>
+<tr>
+<td height=3D"46">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!--TEXTO-->
+<tr>
+<td>
+<table width=3D"600" border=3D"0" align=3D"center" cellpadding=3D"0" cellsp=
+acing=3D"0">
+<tbody>
+<tr align=3D"left">
+<td width=3D"60">&nbsp;</td>
+<td><font face=3D"Arial, helvetica, sans-serif" style=3D"color: #000000; fo=
+nt-size: 22px; font-weight: regular; line-height:28px;">=E2=80=A2 Regras Co=
+merciais<br>
+=E2=80=A2 Elenco Globo<br>
+=E2=80=A2 Opera=C3=A7=C3=B5es Comerciais<br>
+e Financeiras<br>
+=E2=80=A2 Formatos Comerciais<br>
+<br>
+<b>E muito mais!</b> </font></td>
+<td width=3D"70">&nbsp;</td>
+<td><img data-assetid=3D"9766056" style=3D"display: block; margin: 0; paddi=
+ng: 0; border: none;" src=3D"https://image.relacionamentoglobo.globo.com/li=
+b/fe3f15707564067b771772/m/1/1e123363-bc1e-4d91-89e8-089f1f40f615.png" heig=
+ht=3D"196" width=3D"220" alt=3D"">
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!--ESPA=C3=87O-->
+<tr>
+<td>
+<table width=3D"600" border=3D"0" align=3D"center" cellpadding=3D"0" cellsp=
+acing=3D"0">
+<tbody>
+<tr>
+<td height=3D"24">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!--BT-->
+<tr>
+<td>
+<table width=3D"600" border=3D"0" align=3D"left" cellpadding=3D"0" cellspac=
+ing=3D"0">
+<tbody>
+<tr align=3D"left">
+<td width=3D"50">&nbsp;</td>
+<td><a href=3D"https://urldefense.com/v3/__https://click.relacionamentoglob=
+o.globo.com/?qs=3Df370f9da50392f1b4ffbe1b2b9590cdf93d94000db4a526e9e7f40089=
+3c276dc2df66eaa23cf208b762b3dbaa9d6c6d061f02a2bb2094494__;!!MOA0!f2VFKaqqCl=
+kIeS6w4lZs3Fw_tDHiogOicdNsKVij51kxHBJetqiXKJ6UT-el45-fX9iGfgdBzMMr2jRSbizRg=
+vUmsZlqVlDSyF2Z2MA$"><img data-assetid=3D"9766053" style=3D"display: block;=
+ margin: 0; padding: 0; border: none;" src=3D"https://image.relacionamentog=
+lobo.globo.com/lib/fe3f15707564067b771772/m/1/79e755f4-8c30-49fc-84fd-b4f8a=
+2279a7f.png" height=3D"65" width=3D"211" alt=3D"Acesse J=C3=A1"></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!--ESPA=C3=87O-->
+<tr>
+<td>
+<table width=3D"600" border=3D"0" align=3D"center" cellpadding=3D"0" cellsp=
+acing=3D"0">
+<tbody>
+<tr>
+<td height=3D"32">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!--IMG-->
+<tr>
+<td>
+<table width=3D"600" border=3D"0" align=3D"center" cellpadding=3D"0" cellsp=
+acing=3D"0">
+<tbody>
+<tr align=3D"left">
+<td><img data-assetid=3D"9766054" style=3D"display: block; margin: 0; paddi=
+ng: 0; border: none;" src=3D"https://image.relacionamentoglobo.globo.com/li=
+b/fe3f15707564067b771772/m/1/c8f8519c-4dbd-4611-8e79-7ff05397f6cf.png" heig=
+ht=3D"102" width=3D"600" alt=3D"">
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!--Footer-->
+<table class=3D"wrapper" ;=3D"" width=3D"100%" cellspacing=3D"0" cellpaddin=
+g=3D"0" border=3D"0" bgcolor=3D"#FFFFFF">
+<tbody>
+<tr>
+<td style=3D"font-size:10px; line-height:10px;" height=3D"20">&nbsp;</td>
+</tr>
+<tr>
+<td style=3D"font-size:10px; line-height:10px;" height=3D"20">
+<p style=3D"font-size: 14px; line-height: 1.2; text-align: center; word-bre=
+ak: break-word; font-family: Verdana, Geneva, sans-serif; mso-line-height-a=
+lt: 17px; margin: 0; color: rgb(85, 85, 85);">
+Conhe=C3=A7a nossos canais:</p>
+</td>
+</tr>
+<tr>
+<td style=3D"font-size:10px; line-height:10px;" height=3D"10">&nbsp;</td>
+</tr>
+<tr>
+<td valign=3D"top" align=3D"center">
+<table class=3D"social_icons" role=3D"presentation" style=3D"table-layout: =
+fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; m=
+so-table-lspace: 0pt; mso-table-rspace: 0pt;" valign=3D"top" width=3D"100%"=
+ cellspacing=3D"0" cellpadding=3D"0">
+<tbody>
+<tr style=3D"vertical-align: top;" valign=3D"top">
+<td style=3D"word-break: break-word; vertical-align: top; padding-top: 10px=
+; padding-right: 5px; padding-bottom: 10px; padding-left: 5px;" valign=3D"t=
+op">
+<table class=3D"social_table" role=3D"presentation" style=3D"table-layout: =
+fixed; vertical-align: top; border-spacing: 0; border-collapse: collapse; m=
+so-table-tspace: 0; mso-table-rspace: 0; mso-table-bspace: 0; mso-table-lsp=
+ace: 0;" valign=3D"top" cellspacing=3D"0" cellpadding=3D"0" align=3D"center=
+">
+<tbody>
+<tr style=3D"vertical-align: top; display: inline-block; text-align: center=
+;" valign=3D"top" align=3D"center">
+<td style=3D"word-break: break-word; vertical-align: top; padding-bottom: 0=
+; padding-right: 10px; padding-left: 10px;" valign=3D"top">
+<a href=3D"https://urldefense.com/v3/__https://click.relacionamentoglobo.gl=
+obo.com/?qs=3Df370f9da50392f1b35ab863c38f9d2d058ee4847da9fd3a0ee8eb9c68d664=
+caf7f4d885d838773a495f14b6f4a0495b5993615ec911c7f6f__;!!MOA0!f2VFKaqqClkIeS=
+6w4lZs3Fw_tDHiogOicdNsKVij51kxHBJetqiXKJ6UT-el45-fX9iGfgdBzMMr2jRSbizRgvUms=
+ZlqVlDSSVR5ylw$" target=3D"_blank"><img alt=3D"Globo Ads" src=3D"https://im=
+age.relacionamentoglobo.globo.com/lib/fe3f15707564067b771772/m/1/228fb2eb-5=
+b02-4313-a27d-e1a28e99747b.png" style=3D"text-decoration: none; -ms-interpo=
+lation-mode: bicubic; height: auto; border: 0; display: block; height: 21px=
+;" title=3D"Globo Ads" height=3D"21"></a></td>
+<td style=3D"word-break: break-word; vertical-align: top; padding-bottom: 0=
+; padding-right: 10px; padding-left: 10px;" valign=3D"top">
+<p style=3D"margin: 0px; font-size: 14px; font-weight: bold; color: rgb(85,=
+ 85, 85);">
+|</p>
+</td>
+<td style=3D"word-break: break-word; vertical-align: top; padding-bottom: 0=
+; padding-right: 10px; padding-left: 10px;" valign=3D"top">
+<a href=3D"https://urldefense.com/v3/__https://click.relacionamentoglobo.gl=
+obo.com/?qs=3Df370f9da50392f1b83d8989af39ec03656f9fe135da8191e8a44cadd58d49=
+2972ee9439e29a3c1f5f5b990e04a0cb4c46d01db212e54eebc__;!!MOA0!f2VFKaqqClkIeS=
+6w4lZs3Fw_tDHiogOicdNsKVij51kxHBJetqiXKJ6UT-el45-fX9iGfgdBzMMr2jRSbizRgvUms=
+ZlqVlDSoA7jJ8Y$" target=3D"_blank"><img alt=3D"@negociosglobo" src=3D"https=
+://image.relacionamentoglobo.globo.com/lib/fe3f15707564067b771772/m/1/427eb=
+7e0-5e57-4fad-aebf-7794eff2de93.png" style=3D"text-decoration: none; -ms-in=
+terpolation-mode: bicubic; height: auto; border: 0; display: block; height:=
+ 21px;" title=3D"@globoads" height=3D"21"></a>
+</td>
+<td style=3D"word-break: break-word; vertical-align: top; padding-bottom: 0=
+; padding-right: 10px; padding-left: 10px;" valign=3D"top">
+<p style=3D"margin: 0px; font-size: 14px; font-weight: bold; color: rgb(85,=
+ 85, 85);">
+|</p>
+</td>
+<td style=3D"word-break: break-word; vertical-align: top; padding-bottom: 0=
+; padding-right: 10px; padding-left: 10px;" valign=3D"top">
+<a href=3D"https://urldefense.com/v3/__https://click.relacionamentoglobo.gl=
+obo.com/?qs=3Df370f9da50392f1b8dd4113ae6b65a99a2725cd00d0ef6c983cd35022f4d2=
+828bde98ef12dca22c8452e398f87f313ad8ad76ddf0fdf2f84__;!!MOA0!f2VFKaqqClkIeS=
+6w4lZs3Fw_tDHiogOicdNsKVij51kxHBJetqiXKJ6UT-el45-fX9iGfgdBzMMr2jRSbizRgvUms=
+ZlqVlDSibDDnPo$" target=3D"_blank"><img alt=3D"LinkedIn - Globo Ads" src=3D=
+"https://image.relacionamentoglobo.globo.com/lib/fe3f15707564067b771772/m/1=
+/0e6678fd-f9c8-4270-ad2b-e6a076de9c5e.png" style=3D"text-decoration: none; =
+-ms-interpolation-mode: bicubic; height: auto; border: 0; display: block; h=
+eight: 21px;" title=3D"LinkedIn - Globo Ads" height=3D"21"></a>
+</td>
+<td style=3D"word-break: break-word; vertical-align: top; padding-bottom: 0=
+; padding-right: 10px; padding-left: 10px;" valign=3D"top">
+<p style=3D"margin: 0px; font-size: 14px; font-weight: bold; color: rgb(85,=
+ 85, 85);">
+|</p>
+</td>
+<td style=3D"word-break: break-word; vertical-align: top; padding-bottom: 0=
+; padding-right: 10px; padding-left: 10px;" valign=3D"top">
+<a href=3D"https://urldefense.com/v3/__https://click.relacionamentoglobo.gl=
+obo.com/?qs=3Df370f9da50392f1b06a79c5af84809df8b391d752e3517217cff6ce39f228=
+f337279ab93d36d75e78598bd649ba05b7c30db0284da3e3d19__;!!MOA0!f2VFKaqqClkIeS=
+6w4lZs3Fw_tDHiogOicdNsKVij51kxHBJetqiXKJ6UT-el45-fX9iGfgdBzMMr2jRSbizRgvUms=
+ZlqVlDSDoGjH34$" target=3D"_blank"><img alt=3D"TikTok - Globo Ads" src=3D"h=
+ttps://image.relacionamentoglobo.globo.com/lib/fe3f15707564067b771772/m/1/b=
+d91ab8c-bbcd-4daf-8a8e-20413e5f3eae.png" style=3D"text-decoration: none; -m=
+s-interpolation-mode: bicubic; height: auto; border: 0; display: block; hei=
+ght: 21px;" title=3D"LinkedIn - Globo Ads" height=3D"21"></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table style=3D"background-color: transparent; min-width: 100%; " class=3D"=
+stylingblock-content-wrapper" width=3D"600" cellspacing=3D"0" cellpadding=
+=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td class=3D"link-rodape" style=3D"padding: 12px 5px;">
+<p style=3D"font-family: arial,helvetica,sans-serif;font-size: 13px;text-al=
+ign: center;color: rgb(85, 85, 85); margin-left:12px; margin-right: 12px; t=
+ext-align: center; line-height: 15px; margin-top:15px; margin-bottom:20px;"=
+>
+Se n=C3=A3o deseja mais receber comunica=C3=A7=C3=B5es Globo, <a href=3D"ht=
+tps://urldefense.com/v3/__https://click.relacionamentoglobo.globo.com/?qs=
+=3Df370f9da50392f1b141ee6ea6fac54155ecf7ad5e9e0a42af170d685b85b1c97cedceb8e=
+27d4ad13e06f70684bf315ce881df437847c93f36981f20c7b4151e7__;!!MOA0!f2VFKaqqC=
+lkIeS6w4lZs3Fw_tDHiogOicdNsKVij51kxHBJetqiXKJ6UT-el45-fX9iGfgdBzMMr2jRSbizR=
+gvUmsZlqVlDSCgvVBLY$" style=3D"color: rgb(85, 85, 85);">
+descadastre-se.</a> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"font-size:10px; line-height:10px;" height=3D"10">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<img src=3D"https://click.relacionamentoglobo.globo.com/open.aspx?ffcb10-fe=
+8e15717361037a73-fe25177371640d78761279-fe3f15707564067b771772-ff2e1775746c=
+-fe2810747266037c741178-ffc61d&amp;d=3D100213&amp;bmt=3D0" width=3D"1" heig=
+ht=3D"1" alt=3D""><!-- End Save for Web Slices -->
+</div>
+</body>
+</html>
+
+--4bksE4yU9C3a=_?:--
