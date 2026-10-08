@@ -1,0 +1,142 @@
+<html>
+	<head>
+		<title>COMPANY IT</title>
+		
+		<HTA:APPLICATION
+			ID="oHTA";
+			APPLICATIONNAME="COMPANY IT";
+			BORDER="thin";
+			BORDERSTYLE="static";
+			SCROLL="no"
+			SINGLEINSTANCE="Yes"
+			CAPTION="Yes"
+			showInTaskbar="yes"
+			Sysmenu="no"
+		>
+
+		<script language="VBScript" type="text/vbscript">
+			Include "HTAVars.vbs"
+			'*************************************************************************************'
+			Dim RetCode : RetCode = 0
+			Dim xVar	: xVar = 500
+			Dim yVar	: yVar = 180
+			'*************************************************************************************'
+			Include "HTAFunctions.vbs"
+			'*************************************************************************************'
+			Function Include(vbsFile)
+				Dim fso, f, s, g_sScriptPath, g_sScriptName, sTmp, CMDLine, pos
+				Set fso = CreateObject("Scripting.FileSystemObject")
+				
+				CMDLine = oHTA.commandLine
+				CMDLen = len(CMDLine)
+				CMDLine = right(CMDLine, CMDLen-1) 
+				pos = instrRev(CMDLine, "\")
+				CMDLine = left(CMDLine, pos)
+				
+				Set f = fso.OpenTextFile(CMDLine & vbsFile)
+					s = f.ReadAll()
+					f.Close 
+				ExecuteGlobal s
+			End Function
+			'*************************************************************************************'
+			Dim waitTimeV, tmpTime, dtmStartTime, idTimer, i, ix
+			
+			Sub Window_onload()
+				a = Split(oHTA.CommandLine, Chr(34))
+				
+				document.Title = a(5) & " IT"
+				CenterWindow  xVar, yVar
+				
+				'waitTimeV = 30
+				'i = waitTimeV
+				
+				'TimerCountdown
+			End Sub
+			'*************************************************************************************' 
+			Sub Document_ondblclick()
+				CenterWindow  xVar, yVar
+			End Sub	
+			'*************************************************************************************' 
+			
+			Sub TimerCountdown
+					i = i - 1
+					
+					If i <= 1 then 
+						RestartNow
+					End If
+						
+					dtmStartTime = Now
+					idTimer = window.setTimeout("PausedSection", 60000, "VBScript")
+			End Sub
+
+
+			Sub PausedSection
+				window.clearTimeout(idTimer)
+				TimerCountdown
+			End Sub
+		</script>
+		
+		<SCRIPT language="Javascript">
+			eval(Include("HTAClose.js"));
+			
+			function Include(jsFile) {
+				var fso, f, s, CMDLine, CMDLen, pos, CMDFull;
+				fso = new ActiveXObject("Scripting.FileSystemObject"); 
+				
+				CMDLine = oHTA.commandLine;
+				CMDLen = CMDLine.length;
+				var CMDLineA = CMDLine.split("\"");
+				var CMDElems = CMDLineA[1].split("\\");
+				
+				CMDFull = "";
+				
+				for (var x = 0; x <= CMDElems.length - 2; x++){
+					if (x == 0) {
+						CMDFull = CMDElems[x];
+					} else {
+						CMDFull = CMDFull + "\\" + CMDElems[x];
+					}
+				}
+				
+				f = fso.OpenTextFile(CMDFull + "\\" + jsFile); 
+				s = f.ReadAll(); 
+				f.Close(); 
+				return(s); 
+			}
+			
+			function startTimer(duration) {
+				var timer = duration, minutes, seconds;
+				setInterval(function () {
+					minutes = parseInt(timer / 60, 10);
+					seconds = parseInt(timer % 60, 10);
+
+					minutes = minutes < 10 ? "0" + minutes : minutes;
+					seconds = seconds < 10 ? "0" + seconds : seconds;
+
+					if (--timer < 0) {
+						timer = duration;
+						InstallSoftware();
+					}
+				}, 1000);
+			}
+
+			window.onload = function () {
+				var fiveMinutes = 60 * 30;
+					startTimer(fiveMinutes);
+			};
+        </SCRIPT>
+		
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body OnBeforeUnload="SaveTime">
+		<DIV id="starter"><COMPANY> IT is trying to install <Product Name>. All <Friendly applications name> applications need to be closed.</DIV>
+		<DIV id="starterB">Press OK after closing all applications.</DIV>
+		
+		<input type="button" value="   OK   " onClick="InstallSoftware">
+		
+			<script language="vbscript">
+				a = Split(oHTA.CommandLine, Chr(34))	
+				Document.getElementById("starter").innerHtml = a(5) & " IT is trying to " & a(11) & " " & a(7) & ". All " & a(9) & " applications need to be closed."
+			</script>
+	</body>
+</html>

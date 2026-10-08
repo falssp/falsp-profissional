@@ -1,0 +1,57 @@
+body{
+	font-face: Calibri, Tahoma, Arial;
+	background-image: url("Icon_Info.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-color: #F0F0F0;
+}
+
+#ProgBar{
+	font-face: Calibri, Tahoma, Arial;
+	background-image: url(none);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-color: #F0F0F0;
+}
+
+#ProgBarText{
+	font-face: Calibri, Tahoma, Arial;
+	font-family: Calibri, Tahoma, Arial;
+	font-size: 90%;
+	background-image: url(none);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-color: #F0F0F0;
+}
+
+h1{
+	color: darkblue;
+	font-size: 12pt;
+}
+
+div{
+	display: block;
+	font-family: Calibri, Tahoma, Arial;
+	font-size: 90%;
+	position: relative;
+	margin-left: 50px;
+	margin-bottom: 10px;
+}
+
+td{
+	font-face: Calibri, Tahoma, Arial;
+	font-family: Calibri, Tahoma, Arial;
+	font-size: 90%;
+}
+
+#container{
+	font-face: Calibri, Tahoma, Arial;
+	font-family: Calibri, Tahoma, Arial;
+	font-size: 90%;
+}
+
+input{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}

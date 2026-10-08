@@ -1,0 +1,152 @@
+<html>
+  <head>
+		<TITLE>COMPANY IT</TITLE>
+		<HTA:APPLICATION 
+			ID="oHTA"
+      APPLICATIONNAME="COMPANY IT"
+      CAPTION="yes"
+			SHOWINTASKBAR="no"
+			SINGLEINSTANCE="yes"
+			SYSMENU="no"
+			WINDOWSTATE="normal"
+			MAXIMIZEBUTTON="no"
+			SCROLL="no"
+			BORDER="thin"
+			SCROLLFLAT="no"
+		>
+		
+		<script language="vbscript" type="text/vbscript">
+			Include "HTAVars.vbs"
+			'****************************************************************************************************
+			Dim RetCode	: RetCode = 0
+			Dim xVar	: xVar = 650
+			Dim yVar	: yVar = 300
+			'****************************************************************************************************
+			Include "HTAFunctions.vbs"
+			'****************************************************************************************************
+			Function Include(vbsFile)
+				Dim fso, f, s, g_sScriptPath, g_sScriptName, sTmp, CMDLine, pos
+				Set fso = CreateObject("Scripting.FileSystemObject")
+				
+				CMDLine = oHTA.commandLine
+				CMDLen = len(CMDLine)
+				CMDLine = right(CMDLine, CMDLen-1)
+				pos = instrRev(CMDLine, "\")
+				CMDLine = left(CMDLine, pos)
+				
+				Set f = fso.OpenTextFile(CMDLine & vbsFile)
+					s = f.ReadAll()
+					f.Close
+				ExecuteGlobal s
+			End Function
+			'****************************************************************************************************
+			Sub Window_onload()
+				a = Split(oHTA.CommandLine, Chr(34))
+				
+				document.Title = a(7)
+				CenterWindow xVar, yVar
+				
+				pbStartTime = Now
+				pbWaitTime = a(3)
+				pbWaitTime = Int(pbWaitTime)
+				
+				rTimerInternal
+				pbTimerID = window.setInterval("rTimerInternal", 200)
+        
+			End Sub
+			'****************************************************************************************************
+      Sub rTimerInternal 
+        pbSecsPassed = DateDiff("s",pbStartTime,Now) 
+        pbMinsToGo =  Int((pbWaitTime - pbSecsPassed) / 60) 
+        pbSecsToGo = Int((pbWaitTime - pbSecsPassed) - (pbMinsToGo * 60)) 
+
+        document.getElementById("countdown").innerHTML = "<br>" & pbMinsToGo & " minutes " & pbSecsToGo & " seconds<br>"
+
+        if pbSecsToGo < 10 then 
+          pbSecsToGo = "0" & pbSecsToGo  
+        end if 
+                  
+        if DateDiff("s",pbStartTime,Now) >= pbWaitTime then 
+          StopTimer 
+          DoAction 
+        end if 
+      End Sub 
+			'****************************************************************************************************
+			Sub Document_ondblclick()
+				CenterWindow xVar, yVar
+			End Sub
+			'****************************************************************************************************
+		</script>
+		
+		<script language="javascript">
+			eval(Include("HTAClose.js"));
+			
+			function Include(jsFile) {
+				var fso, f, s, CMDLine, CMDLen, pos, CMDFull;
+				fso = new ActiveXObject("Scripting.FileSystemObject");
+				
+				CMDLine = oHTA.commandLine;
+				CMDLen = CMDLine.length;
+				var CMDLineA = CMDLine.split("\"");
+				var CMDElems = CMDLineA[1].split("\\");
+				
+				CMDFull = "";
+				
+				for (var x = 0; x <= CMDElems.length - 2; x++){
+					if (x == 0) {
+						CMDFull = CMDElems[x];
+					} else {
+						CMDFull = CMDFull + "\\" + CMDElems[x];
+					}
+				}
+				
+				f = fso.OpenTextFile(CMDFull + "\\" + jsFile);
+				s = f.ReadAll();
+				f.Close();
+				return(s);
+			}
+		</script>
+
+	  <style type="text/css">
+			body {
+				background-color: #FFFFFF;
+				color: white;
+				text-align: center;
+				font-family: arial;
+				font-weight: bold;
+				font-size: 20px;
+				font-variant: small-caps;
+				width:100%;
+				overflow: hidden;           
+      }
+		</style>
+  </head>
+
+  <body OnBeforeUnload="SaveTime">
+    <!-- Define a division for displaying the countdown message -->
+      
+    <table border="0" width="100%" height="100%">
+      <tr>
+        <td width="15%" align="center"><img src="./archer.jpg" width="300" height="95"/></td>
+        <td><font face="Arial" color="#05083B" size="2"><p><div id="content">FriendlyPKGName is about to be installed on your computer.</br> Please save your work because FriendlyPKGName wil be disabled.</br> The countdown below shows the time left before the installation begins.</div></p></font></td>
+      </tr>
+      <tr height="40%">
+        <td></td>
+        <td align="center" valign="top"><div id="countdown" align="center" valign="top" STYLE="font-family: Arial;font-size: 15px; color: black; font-weight: bold"></div></td>
+      </tr>
+      <tr height="100%">
+        <td></td>
+        <td width="100%" align="center"><button type="button" style="width=300px" onClick="InstallSoftware">Install Now</button></td>
+      </tr>
+    </table>
+	
+    <!-- Define the actions to take when the body loads -->
+    <script language="vbscript">
+      Set oShell= CreateObject("Wscript.Shell")
+			Dim a				: a = Split(oHTA.CommandLine, Chr(34))
+      Dim content		: content = a(7) & " is about to be installed on your computer.</br> Please save your work because " & a(7) & " will be disabled.</br> The countdown below shows the time left before the installation begins."
+      document.getElementById("content").innerHtml = content  
+    </script>
+    
+  </body>
+</html>

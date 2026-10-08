@@ -1,0 +1,37 @@
+PROPERTY,ADD,WRAPPER,ClientName=WPP,null
+PROPERTY,ADD,WRAPPER,PKGName=Cisco_AnyConnectSecureMobilityClient_4.10.07061_WPP_W10_EN_B1,null
+PROPERTY,ADD,WRAPPER,PKGGUID={11E16B39-0FA6-4DF0-9736-73BB638C9924},null
+PROPERTY,ADD,WRAPPER,appVendor=Cisco,null
+PROPERTY,ADD,WRAPPER,ProductName=AnyConnectSecureMobilityClient,null
+PROPERTY,ADD,WRAPPER,ProductVersion=4.10.07061,null
+PROPERTY,ADD,WRAPPER,killProcessesInstall=acextwebhelper.exe;acwebhelper.exe;InstallHelper.exe;InstallHelper64.exe;manifesttool.exe;ProxyCon.exe;VACon64.exe;vpnagent.exe;vpncli.exe;vpndownloader.exe;vpnmgmttun.exe;vpnui.exe,null
+PROPERTY,ADD,WRAPPER,killProcessesUninstall=acextwebhelper.exe;acwebhelper.exe;InstallHelper.exe;InstallHelper64.exe;manifesttool.exe;ProxyCon.exe;VACon64.exe;vpnagent.exe;vpncli.exe;vpndownloader.exe;vpnmgmttun.exe;vpnui.exe,null
+
+
+#PREINSTALL
+PREINSTALL,STOP,Process,%killProcessesInstall%=kill;null;null,null
+PREINSTALL,REMOVE,MSI,%PKGGUID%=null=%PKGName%,null;null
+
+#INSTALL
+INSTALL,ADD,MSI,anyconnect-win-4.10.07061-core-vpn-predeploy-k9.msi=null=null=%PKGName%,null;null
+
+#POSTINSTALL
+
+#USERINSTALL
+
+#PREUNINSTALL
+PREUNINSTALL,STOP,Process,%killProcessesUninstall%=kill;null;null,null
+
+#UNINSTALL
+UNINSTALL,REMOVE,MSI,%PKGGUID%=null=%PKGName%,null;null
+
+#POSTUNINSTALL
+
+#USERUNINSTALL
+
+#ROLLBACK
+
+#This package was build using:
+#Wamp_Cli_Version: v0.8.4
+#Wamp_PS_Version: v1.3.18
+#Wamp_Vscode_Version: v1.4.2

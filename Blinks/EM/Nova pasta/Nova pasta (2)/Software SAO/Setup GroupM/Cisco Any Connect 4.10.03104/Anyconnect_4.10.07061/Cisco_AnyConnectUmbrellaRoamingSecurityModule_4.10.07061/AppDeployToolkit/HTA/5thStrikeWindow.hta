@@ -1,0 +1,266 @@
+<html>
+	<head>
+		<title>COMPANY IT</title>
+		
+		<HTA:APPLICATION
+			ICON="..\..\_Source\ico.ico";
+			ID="oHTA";
+			APPLICATIONNAME="COMPANY IT Communication";
+			BORDER="thin";
+			BORDERSTYLE="static";
+			SCROLL="no"
+			SINGLEINSTANCE="Yes"
+			CAPTION="Yes"
+			showInTaskbar="No"
+			Sysmenu="no"
+			INNERBORDER="no"
+		>
+
+		<script language="VBScript" type="text/vbscript">
+			Include "HTAVars.vbs"
+			'*************************************************************************************'
+			Dim RetCode : RetCode = 0
+			Dim xVar	: xVar = 530
+			Dim yVar	: yVar = 210
+			
+			Dim p5sbTimerID
+			Dim p5sbHTML 
+			Dim p5sbWaitTime
+			Dim p5sbHeight
+			Dim p5sbWidth
+			Dim p5sbBorder
+			Dim p5sbUnloadedColor
+			Dim p5sbLoadedColor
+			Dim p5sbStartTime
+			'*************************************************************************************'
+			Include "HTAFunctions.vbs"
+			'*************************************************************************************'
+			Function Include(vbsFile)
+				Dim fso, f, s, g_sScriptPath, g_sScriptName, sTmp, CMDLine, pos
+				Set fso = CreateObject("Scripting.FileSystemObject")
+				
+				CMDLine = oHTA.commandLine
+				CMDLen = len(CMDLine)
+				CMDLine = right(CMDLine, CMDLen-1) 
+					pos = instrRev(CMDLine, "\")
+				CMDLine = left(CMDLine, pos)
+				
+				Set f = fso.OpenTextFile(CMDLine & vbsFile)
+					s = f.ReadAll()
+					f.Close 
+				ExecuteGlobal s
+			End Function
+			'*************************************************************************************'
+			Sub Window_onload()		
+				p5sbHeight = 13					' Progress bar height
+				p5sbWidth= 250 					' Progress bar width
+				p5sbUnloadedColor = "white"		' Color of unloaded area
+				p5sbLoadedColor = "#00FF00"		' Color of loaded area
+				p5sbBorder = "grey"				' Color of Progress bar border
+				
+				a = Split(oHTA.CommandLine, Chr(34))
+				
+				Const HKEY_CLASSES_ROOT   = &H80000000
+				Const HKEY_CURRENT_USER   = &H80000001
+				Const HKEY_LOCAL_MACHINE  = &H80000002
+				Const HKEY_USERS          = &H80000003
+				Const HKEY_CURRENT_CONFIG = &H80000005
+
+				Dim oReg, bitness
+				Set oReg = GetObject("winmgmts:{impersonationLevel=impersonate}!\\.\root\default:StdRegProv")
+				Set WshShell = CreateObject("WScript.Shell")
+
+				If a(15) <> "" Then
+					p5sbWaitTime = CInt(a(15)) 
+				Else 
+					If a(19) = "32" Then
+						bitness = ""
+					Else
+						bitness = "\Wow6432Node"
+					End If
+					
+					If oReg.EnumKey(HKEY_LOCAL_MACHINE, "SOFTWARE" & bitness & "\IBM\Packages\" & a(17) & "\remaningTime", "", "") = 0 Then
+					  p5sbWaitTime = WshShell.RegRead ("HKEY_LOCAL_MACHINE\SOFTWARE" & bitness & "\IBM\Packages\" & a(17) & "\remaningTime")
+					  p5sbWaitTime = CInt(p5sbWaitTime)
+					Else
+					  p5sbWaitTime = 3600
+					End If
+				End If
+				
+				document.Title = a(3) & " IT Communication"
+				CenterWindow  xVar, yVar
+					 
+				p5sbStartTime = Now
+				p5sbrProgressbar
+				p5sbTimerID = window.setInterval("p5sbrProgressbar", 200)
+			End Sub
+			'*************************************************************************************' 
+			Sub Document_ondblclick()
+				CenterWindow  xVar, yVar
+			End Sub	
+			
+			Sub p5sbrProgressbar
+				p5sbHTML = ""
+				p5sbSecsPassed = DateDiff("s", p5sbStartTime, Now)
+				p5sbMinsToGo =  Int((p5sbWaitTime - p5sbSecsPassed) / 60)
+				p5sbSecsToGo = Int((p5sbWaitTime - p5sbSecsPassed) - (p5sbMinsToGo * 60))
+				
+				a = Split(oHTA.CommandLine, Chr(34))
+					If a(19) = "32" Then
+						WshShell.RegWrite "HKEY_LOCAL_MACHINE\SOFTWARE\IBM\Packages\" & a(17) & "\remaningTime", ((p5sbMinsToGo * 60) + p5sbSecsToGo)
+					Else
+						WshShell.RegWrite "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\IBM\Packages\" & a(17) & "\remaningTime", ((p5sbMinsToGo * 60) + p5sbSecsToGo)
+					End If
+				
+				if p5sbSecsToGo < 10 then
+					p5sbSecsToGo = "0" & p5sbSecsToGo 
+				end if
+				
+				p5sbLoadedWidth = (p5sbSecsPassed / p5sbWaittime) * p5sbWidth
+				p5sbUnloadedWidth = p5sbWidth - p5sbLoadedWidth
+				
+					p5sbHTML = p5sbHTML & "<table style=" & chr(34) & "font-size: 115%;" & chr(34) & " border=0 cellpadding=0 cellspacing=0 width=" & p5sbWidth & "><tr>"
+					p5sbHTML = p5sbHTML & "<td align=left width=" & p5sbWidth & "% height=" & p5sbHeight & ">" & p5sbMinsToGo & ":" & p5sbSecsToGo & " minutes</td>"
+					p5sbHTML = p5sbHTML & "</tr></table>"
+					p5sbHTML = p5sbHTML & "<table border=1 bordercolor=" & p5sbBorder & " cellpadding=0 cellspacing=0 width=" & p5sbWidth & "><tr>"
+					p5sbHTML = p5sbHTML & "<th width=" & p5sbLoadedWidth & " height=" & p5sbHeight & "align=left bgcolor="  & p5sbLoadedColor & "></th>"
+					p5sbHTML = p5sbHTML & "<th width=" & p5sbUnloadedWidth & " height=" & p5sbHeight & "align=left bgcolor="  & p5sbUnLoadedColor & "></th>"
+					p5sbHTML = p5sbHTML & "</tr></table><br>"
+					
+				p5sbProgressbar.InnerHTML = p5sbHTML
+				if DateDiff("s", p5sbStartTime, Now) >= p5sbWaitTime then
+					StopTimer
+					DoAction
+				end if
+			End Sub
+	
+			Sub StopTimer
+				window.clearInterval(p5sbTimerID)
+			End Sub
+			
+			Sub DoAction
+				Set WshShell = CreateObject("WScript.Shell")	
+				Self.close
+			End Sub
+			
+			Sub CancelAction
+				On Error Resume Next
+				Self.Close
+			End Sub
+		</script>
+		
+		<SCRIPT language="Javascript">
+				eval(Include("HTAClose.js"));
+				
+				function Include(jsFile) {
+					var fso, f, s, CMDLine, CMDLen, pos, CMDFull;
+					fso = new ActiveXObject("Scripting.FileSystemObject"); 
+					
+					CMDLine = oHTA.commandLine;
+					CMDLen = CMDLine.length;
+					var CMDLineA = CMDLine.split("\"");
+					var CMDElems = CMDLineA[1].split("\\");
+					
+					CMDFull = "";
+					
+					for (var x = 0; x <= CMDElems.length - 2; x++){
+						if (x == 0) {
+							CMDFull = CMDElems[x];
+						} else {
+							CMDFull = CMDFull + "\\" + CMDElems[x];
+						}
+					}
+					
+					f = fso.OpenTextFile(CMDFull + "\\" + jsFile); 
+					s = f.ReadAll(); 
+					f.Close(); 
+					return(s); 
+				}
+        </SCRIPT>
+		
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body id="ProgBar">
+		<DIV id="container" style="position: absolute; left: -80px; top: 18px; font-size: 85%; width: 510;">
+		</DIV>
+
+			<DIV style="position: absolute; left: -30px; bottom: -5px; font-size: 85%;">
+				<span id="p5sbProgressbar" style="background-color: #f0f0f0; font-size: 85%;"></span> 
+			</DIV>
+			
+			
+		<DIV id="buttons" style="position: absolute; right: 10px; bottom: -7px; font-size: 85%;">
+		</DIV>
+		
+			<script language="vbscript">
+				HTMLContainer = ""
+				HTMLButtons = ""
+				
+				a = Split(oHTA.CommandLine, Chr(34))
+				
+					If a(11) = 1 Then 'Standard 5 Strikes
+						HTMLContainer = HTMLContainer & "<DIV id=" & chr(34) & "starter" & chr(34) & ">" & a(3) & " IT is attempting to install the " & a(5) & " " & a(7) & " application.</DIV>"
+						HTMLContainer = HTMLContainer & "<DIV>Click 'Cancel' to postpone this installation.</DIV>"
+						HTMLContainer = HTMLContainer & "<DIV id=" & chr(34) & "starterB" & chr(34) & ">You can postpone " & a(9) & " more time(s) before the installation will be required.</DIV>"
+						
+						HTMLButtons = HTMLButtons & "<input type=" & chr(34) & "button" & chr(34) & " style=" & chr(34) & "position: absolute; right: 110px; bottom: 18px; font-size: 85%;" & chr(34) & " value=" & chr(34) & " Install Now " & chr(34) & " onClick=" & chr(34) & "InstallSoftware" & chr(34) & ">"
+						HTMLButtons = HTMLButtons & "<input type=" & chr(34) & "button" & chr(34) & " style=" & chr(34) & "position: absolute; right: 10px; bottom: 18px; font-size: 85%;" & chr(34) & "  value=" & chr(34) & "   Cancel   " & chr(34) & " onClick=" & chr(34) & "Postpone" & chr(34) & ">" 
+					End If
+					
+					If a(11) = 2 Then 'Standard 5 Strikes plus process/program close
+						HTMLContainer = HTMLContainer & "<DIV id=" & chr(34) & "starter" & chr(34) & ">" & a(3) & " IT is attempting to install the " & a(5) & " " & a(7) & " application. Please close all " & a(13) & " sessions. </br>Selecting 'Install Now' will close all " & a(13) & " sessions AUTOMATICALLY.</DIV>"
+						HTMLContainer = HTMLContainer & "<DIV>Click 'Cancel' to postpone this installation.</DIV>"
+						HTMLContainer = HTMLContainer & "<DIV id=" & chr(34) & "starterB" & chr(34) & ">You can postpone " & a(9) & " more time(s) before the installation will be required.</DIV>"
+						
+						HTMLButtons = HTMLButtons & "<input type=" & chr(34) & "button" & chr(34) & " style=" & chr(34) & "position: absolute; right: 110px; bottom: 18px; font-size: 85%;" & chr(34) & " value=" & chr(34) & " Install Now " & chr(34) & " onClick=" & chr(34) & "InstallSoftware" & chr(34) & ">"
+						HTMLButtons = HTMLButtons & "<input type=" & chr(34) & "button" & chr(34) & " style=" & chr(34) & "position: absolute; right: 10px; bottom: 18px; font-size: 85%;" & chr(34) & "  value=" & chr(34) & "   Cancel   " & chr(34) & " onClick=" & chr(34) & "Postpone" & chr(34) & ">" 
+					End If
+					
+					If a(11) = 3 Then 'Standard 5 Strikes with reboot warning
+						HTMLContainer = HTMLContainer & "<DIV id=" & chr(34) & "starter" & chr(34) & ">" & a(3) & " IT is attempting to install the " & a(5) & " " & a(7) & " application.</DIV>"
+						HTMLContainer = HTMLContainer & "<DIV>Click 'Cancel' to postpone this installation.</DIV>"
+						HTMLContainer = HTMLContainer & "<DIV id=" & chr(34) & "starterB" & chr(34) & ">You can postpone " & a(9) & " more time(s) before the installation will be required. </br>After the installation is complete you computer will require a restart.</DIV>"
+						
+						HTMLButtons = HTMLButtons & "<input type=" & chr(34) & "button" & chr(34) & " style=" & chr(34) & "position: absolute; right: 110px; bottom: 18px; font-size: 85%;" & chr(34) & " value=" & chr(34) & " Install Now " & chr(34) & " onClick=" & chr(34) & "InstallSoftware" & chr(34) & ">"
+						HTMLButtons = HTMLButtons & "<input type=" & chr(34) & "button" & chr(34) & " style=" & chr(34) & "position: absolute; right: 10px; bottom: 18px; font-size: 85%;" & chr(34) & "  value=" & chr(34) & "   Cancel   " & chr(34) & " onClick=" & chr(34) & "Postpone" & chr(34) & ">" 
+					End If
+					
+					If a(11) = 4 Then 'Standard 5 Strikes with process/program close with reboot warning
+						HTMLContainer = HTMLContainer & "<DIV id=" & chr(34) & "starter" & chr(34) & ">" & a(3) & " IT is attempting to install the " & a(5) & " " & a(7) & " application. Please close all " & a(13) & " sessions. </br>Selecting 'Install Now' will close all " & a(13) & " sessions AUTOMATICALLY.</DIV>"
+						HTMLContainer = HTMLContainer & "<DIV>Click 'Cancel' to postpone this installation.</DIV>"
+						HTMLContainer = HTMLContainer & "<DIV id=" & chr(34) & "starterB" & chr(34) & ">You can postpone " & a(9) & " more time(s) before the installation will be required. </br>After the installation is complete you computer will require a restart.</DIV>"
+						
+						HTMLButtons = HTMLButtons & "<input type=" & chr(34) & "button" & chr(34) & " style=" & chr(34) & "position: absolute; right: 110px; bottom: 18px; font-size: 85%;" & chr(34) & " value=" & chr(34) & " Install Now " & chr(34) & " onClick=" & chr(34) & "InstallSoftware" & chr(34) & ">"
+						HTMLButtons = HTMLButtons & "<input type=" & chr(34) & "button" & chr(34) & " style=" & chr(34) & "position: absolute; right: 10px; bottom: 18px; font-size: 85%;" & chr(34) & "  value=" & chr(34) & "   Cancel   " & chr(34) & " onClick=" & chr(34) & "Postpone" & chr(34) & ">" 
+					End If
+					
+					If a(11) = 5 Then 'Strikes with log off warning
+						HTMLContainer = HTMLContainer & "<DIV id=" & chr(34) & "starter" & chr(34) & ">" & a(3) & " IT is attempting to install the " & a(5) & " " & a(7) & " application.</DIV>"
+						HTMLContainer = HTMLContainer & "<DIV>Click 'Cancel' to postpone this installation.</DIV>"
+						HTMLContainer = HTMLContainer & "<DIV id=" & chr(34) & "starterB" & chr(34) & ">You can postpone " & a(9) & " more time(s) before the installation will be required. </br>After the installation is complete, log off will be required.</DIV>"
+						
+						HTMLButtons = HTMLButtons & "<input type=" & chr(34) & "button" & chr(34) & " style=" & chr(34) & "position: absolute; right: 110px; bottom: 18px; font-size: 85%;" & chr(34) & " value=" & chr(34) & " Install Now " & chr(34) & " onClick=" & chr(34) & "InstallSoftware" & chr(34) & ">"
+						HTMLButtons = HTMLButtons & "<input type=" & chr(34) & "button" & chr(34) & " style=" & chr(34) & "position: absolute; right: 10px; bottom: 18px; font-size: 85%;" & chr(34) & "  value=" & chr(34) & "   Cancel   " & chr(34) & " onClick=" & chr(34) & "Postpone" & chr(34) & ">" 
+					End If
+					
+					If a(11) = 6 Then 'Strikes with process/program close with log off warning
+						HTMLContainer = HTMLContainer & "<DIV id=" & chr(34) & "starter" & chr(34) & ">" & a(3) & " IT is attempting to install the " & a(5) & " " & a(7) & " application. Please close all " & a(13) & " sessions. </br>Selecting 'Install Now' will close all " & a(13) & " sessions AUTOMATICALLY.</DIV>"
+						HTMLContainer = HTMLContainer & "<DIV>Click 'Cancel' to postpone this installation.</DIV>"
+						HTMLContainer = HTMLContainer & "<DIV id=" & chr(34) & "starterB" & chr(34) & ">You can postpone " & a(9) & " more time(s) before the installation will be required. </br>After the installation is complete, log off will be required.</DIV>"
+						
+						HTMLButtons = HTMLButtons & "<input type=" & chr(34) & "button" & chr(34) & " style=" & chr(34) & "position: absolute; right: 110px; bottom: 18px; font-size: 85%;" & chr(34) & " value=" & chr(34) & " Install Now " & chr(34) & " onClick=" & chr(34) & "InstallSoftware" & chr(34) & ">"
+						HTMLButtons = HTMLButtons & "<input type=" & chr(34) & "button" & chr(34) & " style=" & chr(34) & "position: absolute; right: 10px; bottom: 18px; font-size: 85%;" & chr(34) & "  value=" & chr(34) & "   Cancel   " & chr(34) & " onClick=" & chr(34) & "Postpone" & chr(34) & ">" 
+					End If
+					
+					If a(11) = 7 Then 'Strikes last message
+						HTMLContainer = HTMLContainer & "<DIV id=" & chr(34) & "starter" & chr(34) & ">WARNING!!! - The install of " & a(5) & " " & a(7) & " is now required to proceed as you have reached the postpone limit. </br>Do not disrupt the install.</DIV>"
+						HTMLContainer = HTMLContainer & "<DIV>Click 'OK' to proceed. The install should take less than 10 minutes.</DIV>"
+						
+						HTMLButtons = HTMLButtons & "<input type=" & chr(34) & "button" & chr(34) & " style=" & chr(34) & "position: absolute; right: 160px; bottom: 18px; font-size: 85%;" & chr(34) & " value=" & chr(34) & "     OK     " & chr(34) & " onClick=" & chr(34) & "InstallSoftware" & chr(34) & ">"
+					End If
+				
+				container.InnerHTML = HTMLContainer
+				buttons.InnerHTML = HTMLButtons
+			</script>
+	</body>
+</html>

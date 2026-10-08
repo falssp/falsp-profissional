@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<title>COMPANY IT</title>
+		
+		<HTA:APPLICATION
+			ID="oHTA";
+			APPLICATIONNAME="COMPANY IT";
+			BORDER="thin";
+			BORDERSTYLE="static";
+			SCROLL="no"
+			SINGLEINSTANCE="Yes"
+			CAPTION="Yes"
+			showInTaskbar="yes"
+			Sysmenu="no"
+		>
+
+		<script language="VBScript" type="text/vbscript">
+			Include "HTAVars.vbs"
+			'*************************************************************************************'
+			Dim RetCode : RetCode = 0
+			Dim xVar	: xVar = 530
+			Dim yVar	: yVar = 320
+			'*************************************************************************************'
+			Include "HTAFunctions.vbs"
+			'*************************************************************************************'
+			Function Include(vbsFile)
+				Dim fso, f, s, g_sScriptPath, g_sScriptName, sTmp, CMDLine, pos
+				Set fso = CreateObject("Scripting.FileSystemObject")
+				
+				CMDLine = oHTA.commandLine
+				CMDLen = len(CMDLine)
+				CMDLine = right(CMDLine, CMDLen-1) 
+				pos = instrRev(CMDLine, "\")
+				CMDLine = left(CMDLine, pos)
+				
+				Set f = fso.OpenTextFile(CMDLine & vbsFile)
+					s = f.ReadAll()
+					f.Close 
+				ExecuteGlobal s
+			End Function
+			'*************************************************************************************'
+			Sub Window_onload()
+				a = Split(oHTA.CommandLine, Chr(34))
+				
+				document.Title = a(5) & " IT"
+				CenterWindow  xVar, yVar
+			End Sub
+			'*************************************************************************************' 
+			Sub Document_ondblclick()
+				CenterWindow  xVar, yVar
+			End Sub	
+		</script>
+		
+		<SCRIPT language="Javascript">
+			eval(Include("HTAClose.js"));
+			
+			function Include(jsFile) {
+				var fso, f, s, CMDLine, CMDLen, pos, CMDFull;
+				fso = new ActiveXObject("Scripting.FileSystemObject"); 
+				
+				CMDLine = oHTA.commandLine;
+				CMDLen = CMDLine.length;
+				var CMDLineA = CMDLine.split("\"");
+				var CMDElems = CMDLineA[1].split("\\");
+				
+				CMDFull = "";
+				
+				for (var x = 0; x <= CMDElems.length - 2; x++){
+					if (x == 0) {
+						CMDFull = CMDElems[x];
+					} else {
+						CMDFull = CMDFull + "\\" + CMDElems[x];
+					}
+				}
+				
+				f = fso.OpenTextFile(CMDFull + "\\" + jsFile); 
+				s = f.ReadAll(); 
+				f.Close(); 
+				return(s); 
+			}
+        </SCRIPT>
+		
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	
+	</head>
+
+	<body OnBeforeUnload="SaveTime">
+		<DIV id="starter">COMPANY IT is attempting to install the PKGNAME application. Please close all PROCESSES windows, saving any work.</DIV>
+		<DIV>When you click Yes, then all instances of these applications will be terminated automatically and installation will start.</DIV>
+		<DIV>You can choose to postpone this installation by clicking No a maximum of 2 times, after which it will be mandatory. You currently have " & Strikes & " remaining opportunities to postpone.</DIV>
+		<DIV>If no action will be taken in 2 hours, then this window will disappear, and installation will be postponed.</DIV>
+	
+		<input type="button" style="position: absolute; right: 90px; bottom: 10px;" value="     Yes     " onClick="btnYes">
+		<input type="button" style="position: absolute; right: 10px; bottom: 10px;" value="     No     " onClick="btnNo">
+				
+			<script language="vbscript">
+				a = Split(oHTA.CommandLine, Chr(34))
+				Document.getElementById("starter").innerHtml = a(5) & " IT is attempting to install the " & a(7) & " application. Please close all " & a(7) & " windows, saving any work."
+			</script>
+			
+	</body>
+</html>

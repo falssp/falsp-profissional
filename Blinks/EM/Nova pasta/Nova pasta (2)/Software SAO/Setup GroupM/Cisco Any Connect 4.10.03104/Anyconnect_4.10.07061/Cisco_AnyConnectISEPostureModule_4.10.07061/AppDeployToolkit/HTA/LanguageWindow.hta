@@ -1,0 +1,119 @@
+<html>
+	<head>
+		<title>COMPANY IT</title>
+		
+		<HTA:APPLICATION
+			ID="oHTA"
+			APPLICATIONNAME="COMPANY IT"
+			BORDER="thin"
+			BORDERSTYLE="static"
+			CAPTION="yes"
+			MAXIMIZEBUTTON="no"
+			SCROLL="no"
+			SHOWINTASKBAR="yes"
+			SINGLEINSTANCE="yes"
+			SYSMENU="no"
+		/>
+		
+		<script language="vbscript" type="text/vbscript">
+			Include "HTAVars.vbs"
+			'****************************************************************************************************
+			Dim RetCode	: RetCode = 0
+			Dim xVar	: xVar = 500
+			Dim yVar	: yVar = 170
+			'****************************************************************************************************
+			Include "HTAFunctions.vbs"
+			'****************************************************************************************************
+			Function Include(vbsFile)
+				Dim fso, f, s, g_sScriptPath, g_sScriptName, sTmp, CMDLine, pos
+				Set fso = CreateObject("Scripting.FileSystemObject")
+				
+				CMDLine = oHTA.commandLine
+				CMDLen = len(CMDLine)
+				CMDLine = right(CMDLine, CMDLen-1)
+				pos = instrRev(CMDLine, "\")
+				CMDLine = left(CMDLine, pos)
+				
+				Set f = fso.OpenTextFile(CMDLine & vbsFile)
+					s = f.ReadAll()
+					f.Close
+				ExecuteGlobal s
+			End Function
+			'****************************************************************************************************
+			Sub Window_onload()
+				Set oSelect = document.getElementById("lang")
+				
+				a = Split(oHTA.CommandLine, Chr(34))
+				inLang = a(3)
+				
+				document.Title = a(5) & " IT"
+				oLang = Split(inLang, Chr(44))
+				
+				CenterWindow xVar, yVar
+				
+				langSplitter
+			End Sub
+			'****************************************************************************************************
+			Sub Document_ondblclick()
+				CenterWindow xVar, yVar
+			End Sub
+		</script>
+		
+		<script language="javascript">
+			eval(Include("HTAClose.js"));
+			
+			function Include(jsFile) {
+				var fso, f, s, CMDLine, CMDLen, pos, CMDFull;
+				fso = new ActiveXObject("Scripting.FileSystemObject");
+				
+				CMDLine = oHTA.commandLine;
+				CMDLen = CMDLine.length;
+				var CMDLineA = CMDLine.split("\"");
+				var CMDElems = CMDLineA[1].split("\\");
+				
+				CMDFull = "";
+				
+				for (var x = 0; x <= CMDElems.length - 2; x++){
+					if (x == 0) {
+						CMDFull = CMDElems[x];
+					} else {
+						CMDFull = CMDFull + "\\" + CMDElems[x];
+					}
+				}
+				
+				f = fso.OpenTextFile(CMDFull + "\\" + jsFile);
+				s = f.ReadAll();
+				f.Close();
+				return(s);
+			}
+		</script>
+		
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	
+	<body>
+		<DIV id="starter">AccountNameVar IT is attempting to install the FriendlyPKGName application.</DIV>
+		<DIV>Please choose preferred language for application:
+			<select name="lang" id="lang" onChange"LangSelect">
+				<option value="English">English</option>
+				<option value="German">German</option>
+				<option value="Dutch">Dutch</option>
+				<option value="Japanese">Japanese</option>
+				<option value="French">French</option>
+				<option value="Spanish">Spanish</option>
+				<option value="Italian">Italian</option>
+				<option value="Turkish">Turkish</option>
+			</select>
+		</DIV>
+		
+		<input type="button" value="   OK   " onClick="setLang">
+		
+		<script language="vbscript">
+			a = Split(oHTA.CommandLine, Chr(34))
+			
+			a(7) = "<font style=""color:#2980B9"">" & a(7) & "</font>"
+			
+			document.getElementById("starter").innerHtml = a(5) & " IT is attempting to install the " & a(7) & " application."
+		</script>
+	</body>
+</html>
