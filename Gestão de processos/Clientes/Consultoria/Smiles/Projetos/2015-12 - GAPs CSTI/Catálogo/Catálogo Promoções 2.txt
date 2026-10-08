@@ -1,34 +1,3 @@
-Cadastrar Novo Produto
-Cadastrar/ Criar Novo Parceiro (Aéreo)
-Cadastrar/ Criar Novo Parceiro (Não Aéreo)
-
-Reativar campanha
-Transações não processadas
-
-
-Nova Promoção (briefing)
-Manutenção/Alteração de Promoção 
-Prorrogar Promoção (alterar datas de vigência, promoção deve voltar em, promoção deverá voltar)
-Promoção com erro (não bonificou cliente)
-Encerrar/Cancelar Promoção
-
-Bonificação manual / Realizar Bonificação
-
-Criar Voucher
-Regularizar Vouchers
-Prorrogar Voucher 
-Conceder/Disponibilizar/Atribuir Voucher 
-Cancelar Voucher
-
-DADOS MINIMOS
-	Data da reserva
-	ID da Promoção
-	Canais
-	Tier
-	Código Smiles 
-	CPF 
-	Banco
-	Transferência
-	Voucher 
-	IDs Relacionados: 1-FZIU-2798 e 1-FYGG-2486 
-	Transação
+version https://git-lfs.github.com/spec/v1
+oid sha256:1f89d01da0d23fd2aac5506310cc4c8f9bd1bfcea25a6a058fbd9ab07232a75f
+size 741

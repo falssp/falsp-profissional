@@ -1,2 +1,3 @@
-Erro no Cancelamento de Assinatura
-Cancelamento de Assinatura Manual
+version https://git-lfs.github.com/spec/v1
+oid sha256:24980b270877c03f3cec41cc199045b5557d0cf8cb0df7f46cfeddeb12935c41
+size 71

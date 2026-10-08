@@ -1,24 +1,3 @@
-Control Practices:
-
-- Establish standards that enforce appropriate segregation of duties. Periodically review and update the standards.
-
-- Identify and document conflicting functions, such as the ability to initiate, authorise, execute and verify transactions. Ensure that segregation of duties is enforced physically and logically where appropriate.
-
-- Ensure that procedures address the maintenance of appropriate segregation of duties and responsibilities during periods when regular personnel are unavailable (e.g., vacations, illness or leaves of absence).
-
-- Review the impact on segregation of duties and reassign responsibilities where necessary when job roles and responsibilities are created or updated as a result of changing business needs or reorganisation.
-
-- Design and implement compensating controls (e.g., regular review of individuals’ activities by senior IT management) where the size or nature of the IT function precludes full segregation of duties.
-
-
-Práticas de Controle:
-
-- Estabelecer normas que imponham a segregação adequada das funções. Revise e atualize periodicamente os padrões.
-
-- Identificar e documentar funções conflitantes, como a capacidade de iniciar, autorizar, executar e verificar transações. Certifique-se de que a segregação de funções é aplicada fisicamente e logicamente quando apropriado.
-
-- Assegurar que os procedimentos abordem a manutenção da segregação apropriada de deveres e responsabilidades durante os períodos em que o pessoal regular não está disponível (por exemplo, férias, doença ou folgas).
-
-- Rever o impacto sobre a segregação de funções e reatribuir responsabilidades quando necessário quando as funções e responsabilidades de trabalho são criadas ou atualizadas como resultado de mudanças nas necessidades de negócios ou reorganização.
-
-- Conceber e implementar controlos de compensação (por exemplo, revisão regular das actividades dos indivíduos por gestores de TI seniores) onde o tamanho ou a natureza da função de TI impede a segregação total das funções.
+version https://git-lfs.github.com/spec/v1
+oid sha256:cb2bcfe019ec9e350bab3c5da43fff9f90591ce2714cd82f604e4c1c2c3efbf5
+size 2050

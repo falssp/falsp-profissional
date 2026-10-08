@@ -1,1 +1,3 @@
-Project = dsbl AND reporter = luis.savioli AND createdDate >= 2016-01-01 AND createdDate <= 2016-12-31 AND status = done AND summary !~ erro AND summary !~ erros AND summary !~ problema AND summary !~ errado AND summary !~ backlog AND summary !~ cancelar ORDER BY resolved DESC, created DESC
+version https://git-lfs.github.com/spec/v1
+oid sha256:192b7afb59ea9a4731b2fb4e670682c0c834d7d11de597042f91e84e1324da8b
+size 291

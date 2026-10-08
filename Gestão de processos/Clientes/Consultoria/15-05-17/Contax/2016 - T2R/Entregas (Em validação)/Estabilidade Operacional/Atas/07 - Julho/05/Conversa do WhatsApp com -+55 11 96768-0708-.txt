@@ -1,16 +1,3 @@
-05/07/16, 14:51 - As mensagens que você enviar para esta conversa e chamadas agora são protegidas com criptografia de ponta-a-ponta.
-05/07/16, 14:51 - Felipe Lima: Daniel tudo bem?
-
-Podemos agendar a GEROT para as 16 e definir as metas com sua presença amanhã?
-05/07/16, 14:52 - ‪+55 11 96768-0708‬: Opa fala Felipe
-05/07/16, 14:52 - ‪+55 11 96768-0708‬: sim podemos
-05/07/16, 14:52 - ‪+55 11 96768-0708‬: mas é melhor pelq manha
-05/07/16, 14:52 - Felipe Lima: combinado... vou mandar o invite
-05/07/16, 14:53 - Felipe Lima: ok. Acredito que o Muto esteja com algo pronto
-05/07/16, 14:53 - ‪+55 11 96768-0708‬: se possivel manda pela manha as 10h
-05/07/16, 14:53 - Felipe Lima: outra opção é não fazer hoje e realizar os dois dias amanhã...
-05/07/16, 15:03 - Felipe Lima: Donaire... desculpa, mas n entendi a última colocação...
-
-O que você acha melhor? Hoje ou amanhã com os dois dias mais as metas?
-05/07/16, 15:04 - ‪+55 11 96768-0708‬: marca amanha pela manha, analisamos os dois dias + metas.
-05/07/16, 15:04 - Felipe Lima: fechado!! obrigado!!😉
+version https://git-lfs.github.com/spec/v1
+oid sha256:9dc7648652cd0e8d93ccd032c5471823a6f8f469d173560f38f771c728007971
+size 1089

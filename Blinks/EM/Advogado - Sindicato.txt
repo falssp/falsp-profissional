@@ -1,4 +1,3 @@
-Ary Junior10:12
-APROVADO COM 100% DOS PRESENTES E VOTANTES
-juridicotep@uol.com.br
-55794767
+version https://git-lfs.github.com/spec/v1
+oid sha256:7089e12a2601e94d8ef29ae0caf4b1a3179c779365bf3691fe806a760999478b
+size 93

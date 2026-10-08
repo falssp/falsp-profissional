@@ -1,1 +1,3 @@
-project = DFA AND issuetype = bug AND component != Liferay AND resolution != unresolved AND createdDate >= 2016-01-01 AND createdDate <= 2016-12-31 AND assignee was jonathas.souza ORDER BY created DESC
+version https://git-lfs.github.com/spec/v1
+oid sha256:a4949f50ec2aa9a059aaf1eee6d90d768028182ee45ebcf72dca4e0e15f64fc6
+size 201

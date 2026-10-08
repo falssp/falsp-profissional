@@ -1,9 +1,3 @@
-Problema em seleção de vôo
-Recorrência do Clube Smiles (cobrança)
-Reset de Senha (envio do e-mail ao participante)
-Site Indisponível
-Crédito de Vôo Retroativo G3
-Barramento (interno TI)
-Siebel Loyalty Indisponível
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:06163a1937fe6b0a2f63cbb44315f201893fb9495356d1c4b30dbb9709ea0469
+size 225

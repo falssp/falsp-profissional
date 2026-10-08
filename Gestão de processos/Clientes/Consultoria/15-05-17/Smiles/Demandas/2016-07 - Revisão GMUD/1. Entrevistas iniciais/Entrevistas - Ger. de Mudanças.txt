@@ -1,5 +1,3 @@
-Guilherme Afonso
-Cestarolli
-Marcela
-Daniel Braga
-Daniel Missu
+version https://git-lfs.github.com/spec/v1
+oid sha256:001c92e6aa7db2b44dcb3279b2fb22aed800d09cf9743b0ed4e119bab70ffb4a
+size 65

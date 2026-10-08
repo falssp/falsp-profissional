@@ -1,13 +1,3 @@
-Falha de Software - BUG
-Falha de Software - Configuração
-Falha de Banco de Dados
-Falha de Equipamento de Comunicação
-Falha de Hardware - Notebook
-Falha de Hardware - Periféricos
-Falha de Link de Comunicação
-Falha de Sistema Operacional
-Falha Operacional - Time de TI
-Falha Operacional - Usuário
-Dúvida Operacional - Usuário
-Falha ou Falta de Permissionamento
-Nenhuma Falha Identificada
+version https://git-lfs.github.com/spec/v1
+oid sha256:644224c95a0172498a7edc9288a71ed01fa4ad0c9b99bd413c52610a3865de44
+size 397

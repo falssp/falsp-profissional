@@ -1,11 +1,3 @@
-"Arhur, 
-
-Conforme falamos precisamos alterar o parâmetro de parcelamento em produção para os produtos de Compra de Milhas e Reativação devido ao motivo vigente. 
-
-De 3x para 10x sem juros, ok ? 
-
-Precisamos dessa alteração o mais rápido possível. 
-
-Obrigado 
-
-abs"
+version https://git-lfs.github.com/spec/v1
+oid sha256:6547a1baaf39a915acec586901c96c2ef503b15aa51cfc4d9bb452b4e4a35307
+size 277

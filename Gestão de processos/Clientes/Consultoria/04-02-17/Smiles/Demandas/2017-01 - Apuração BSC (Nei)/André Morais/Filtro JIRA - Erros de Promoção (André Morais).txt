@@ -1,1 +1,3 @@
-project in (CSM, NGC) AND createdDate >= 2016-01-01 AND createdDate <= 2016-12-31 AND "Código de Falha" = "Falha Operacional - Time de TI" and assignee = andre.morais and ("Chamado de Visão Participante" in ("Erros relacionados à Bonificação de Compra de Milhas", "Erros relacionados à Bonificação do Clube Smiles", "Erros relacionados à Bonificação do Crédito Retroativo de Milhas", "Erros relacionados à Bonificação de Emissão", "Erros relacionados à Bonificação de Revalidação de Milhas", "Erros relacionados à Bonificação de Transferência de Milhas", "Erros relacionados à Promoção") OR "Chamado da Áreas de Negócio" = "Promoção com erro")
+version https://git-lfs.github.com/spec/v1
+oid sha256:359257f4fe3b61f5c5e75f11ddec13713b720633dc4c8ff6f9c26f0a39435fc0
+size 643
