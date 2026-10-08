@@ -1,0 +1,8 @@
+﻿sep=,
+Número do documento,Unidade monetária,Tipo de documento,Documentos locais associados,Status,Data de emissão,Data de vencimento,Valor da fatura,Saldo pendente,Produto,Código do anunciante,Código do parceiro
+5124375543,BRL,Fatura,29936917,Aberta (não vencida ainda),30 de novembro de 2024,14 de janeiro de 2025,"314.858,98","314.858,98",Display & Video 360,	889272637,857403041
+5124373671,BRL,Fatura,29936325,Aberta (não vencida ainda),30 de novembro de 2024,14 de janeiro de 2025,"29.249,56","29.249,56",Display & Video 360,	889272637,857403041
+5124334667,BRL,Fatura,29906705,Aberta (não vencida ainda),30 de novembro de 2024,14 de janeiro de 2025,"27.299,29","27.299,29",Display & Video 360,	889269253,857403041
+5124327423,BRL,Fatura,29934044,Aberta (não vencida ainda),30 de novembro de 2024,14 de janeiro de 2025,"273.004,01","273.004,01",Display & Video 360,	889269253,857403041
+5101263340,BRL,Fatura,29544317,Aberta (vencimento em breve),31 de outubro de 2024,15 de dezembro de 2024,"508.125,73","508.125,73",Display & Video 360,	889272637,857403041
+5100981368,BRL,Fatura,29543799,Aberta (vencimento em breve),31 de outubro de 2024,15 de dezembro de 2024,"271.432,51","271.432,51",Display & Video 360,	889269253,857403041
