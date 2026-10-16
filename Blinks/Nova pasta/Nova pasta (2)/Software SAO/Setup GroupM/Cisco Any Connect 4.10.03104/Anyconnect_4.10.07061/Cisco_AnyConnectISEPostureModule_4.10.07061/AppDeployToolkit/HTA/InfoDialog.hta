@@ -1,0 +1,133 @@
+<html>
+	<head>
+		<title>COMPANY IT</title>
+		
+		<HTA:APPLICATION
+			ID="oHTA"
+			APPLICATIONNAME="COMPANY IT"
+			BORDER="thin"
+			BORDERSTYLE="static"
+			CAPTION="yes"
+			INNERBORDER="no"
+			MAXIMIZEBUTTON="no"
+			SCROLL="no"
+			SHOWINTASKBAR="yes"
+			SINGLEINSTANCE="yes"
+			SYSMENU="no"
+		/>
+		
+		<script language="vbscript" type="text/vbscript">
+			Include "HTAVars.vbs"
+			'****************************************************************************************************
+			Dim RetCode	: RetCode = 0
+			Dim xVar	: xVar = 440
+			Dim yVar	: yVar = 160
+			'****************************************************************************************************
+			Include "HTAFunctions.vbs"
+			'****************************************************************************************************
+			Function Include(vbsFile)
+				Dim fso, f, s, g_sScriptPath, g_sScriptName, sTmp, CMDLine, pos
+				Set fso = CreateObject("Scripting.FileSystemObject")
+				
+				CMDLine = oHTA.commandLine
+				CMDLen = len(CMDLine)
+				CMDLine = right(CMDLine, CMDLen-1)
+				pos = instrRev(CMDLine, "\")
+				CMDLine = left(CMDLine, pos)
+				
+				Set f = fso.OpenTextFile(CMDLine & vbsFile)
+					s = f.ReadAll()
+					f.Close
+				ExecuteGlobal s
+			End Function
+			'****************************************************************************************************
+			Sub Window_onload()
+				a = Split(oHTA.CommandLine, Chr(34))
+				
+				document.Title = a(5) & " IT"
+				CenterWindow xVar, yVar
+				
+				pbStartTime = Now
+				pbWaitTime = a(3)
+				pbWaitTime = Int(pbWaitTime)
+				
+				rTimer
+				pbTimerID = window.setInterval("rTimer", 200)
+			End Sub
+			'****************************************************************************************************
+			Sub Document_ondblclick()
+				CenterWindow xVar, yVar
+			End Sub
+		</script>
+		
+		<script language="javascript">
+			eval(Include("HTAClose.js"));
+			
+			function Include(jsFile) {
+				var fso, f, s, CMDLine, CMDLen, pos, CMDFull;
+				fso = new ActiveXObject("Scripting.FileSystemObject");
+				
+				CMDLine = oHTA.commandLine;
+				CMDLen = CMDLine.length;
+				var CMDLineA = CMDLine.split("\"");
+				var CMDElems = CMDLineA[1].split("\\");
+				
+				CMDFull = "";
+				
+				for (var x = 0; x <= CMDElems.length - 2; x++){
+					if (x == 0) {
+						CMDFull = CMDElems[x];
+					} else {
+						CMDFull = CMDFull + "\\" + CMDElems[x];
+					}
+				}
+				
+				f = fso.OpenTextFile(CMDFull + "\\" + jsFile);
+				s = f.ReadAll();
+				f.Close();
+				return(s);
+			}
+		</script>
+		
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	
+	<body OnBeforeUnload="SaveTime" id="ProgBar">
+		<DIV id="starterA">The HTATextation of FriendlyPKGName application has completed successfully.</DIV>
+		<DIV id="starterB" style="color:#DB1E48"></DIV>
+		<!-- <DIV id="starterA">The HTATextation of FriendlyPKGName application has ended successfully.</DIV> -->
+		<!-- <DIV id="starterB" style="color:#DB1E48">Please reboot your machine to complete the HTATextation.</DIV> -->
+		<!-- <DIV id="starterA">The HTATextation of FriendlyPKGName application has failed.</DIV> -->
+		<!-- <DIV id="starterB" style="color:#DB1E48">No action is required at this time.</DIV> -->
+		
+		<input type="button" value="   OK   " onClick="DoAction">
+		
+		<script language="vbscript">
+			Dim a				: a = Split(oHTA.CommandLine, Chr(34))
+			
+			Dim SentenceBegin	: SentenceBegin = "The " & a(9) & "ation of " & "<font style=""color:#2980B9"">" & a(7) & "</font>" & " application has"
+			Dim SentenceReboot	: SentenceReboot = "Please reboot your machine to complete the " & a(9) & "ation."
+			Dim SentenceFail	: SentenceFail = "No action is required at this time."
+			
+			Dim Section1, Section2
+			
+			
+			If a(11) = "SUCCESS" Then
+				document.body.style.backgroundImage = "url('Icon_OK.png')"
+				Section1 = SentenceBegin & Chr(32) & "completed successfully."
+			ElseIf a(11) = "SUCCESS REBOOT" Then
+				document.body.style.backgroundImage = "url('Icon_Warning.png')"
+				Section1 = SentenceBegin & Chr(32) & "ended successfully."
+				Section2 = SentenceReboot
+			ElseIf a(11) = "FAILURE" Then
+				document.body.style.backgroundImage = "url('Icon_Error.png')"
+				Section1 = SentenceBegin & Chr(32) & "failed."
+				Section2 = SentenceFail
+			End If
+			
+			
+			document.getElementById("starterA").innerHtml = Section1
+			document.getElementById("starterB").innerHtml = Section2
+		</script>
+	</body>
+</html>

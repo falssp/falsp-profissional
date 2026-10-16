@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<DGRecords>
+    <DGRecord defaultGateway="192.168.0.1" psnFound="1" />
+    <DGRecord defaultGateway="192.168.1.1" psnFound="1" />
+    <DGRecord defaultGateway="10.80.0.1" psnFound="1" />
+    <DGRecord defaultGateway="10.83.2.1" psnFound="1" />
+    <DGRecord defaultGateway="192.168.100.1" psnFound="1" />
+    <DGRecord defaultGateway="192.168.8.1" psnFound="1" />
+    <DGRecord defaultGateway="10.83.14.1" psnFound="0" />
+</DGRecords>

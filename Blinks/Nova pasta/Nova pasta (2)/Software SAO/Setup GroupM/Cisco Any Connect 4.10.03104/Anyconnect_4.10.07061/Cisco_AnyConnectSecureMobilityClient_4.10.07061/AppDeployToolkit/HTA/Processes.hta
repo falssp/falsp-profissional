@@ -1,0 +1,151 @@
+<html>
+	<head>
+		<title>COMPANY IT</title>
+		
+		<HTA:APPLICATION
+			ID="oHTA"
+			APPLICATIONNAME="COMPANY IT"
+			BORDER="thin"
+			BORDERSTYLE="static"
+			CAPTION="yes"
+			MAXIMIZEBUTTON="no"
+			SCROLL="no"
+			SHOWINTASKBAR="yes"
+			SINGLEINSTANCE="yes"
+			SYSMENU="no"
+		/>
+		
+		<script language="vbscript" type="text/vbscript">
+			Include "HTAVars.vbs"
+			'****************************************************************************************************
+			Dim RetCode	: RetCode = 0
+			Dim xVar	: xVar = 510
+			Dim yVar	: yVar = 280
+			'****************************************************************************************************
+			Include "HTAFunctions.vbs"
+			'****************************************************************************************************
+			Function Include(vbsFile)
+				Dim fso, f, s, g_sScriptPath, g_sScriptName, sTmp, CMDLine, pos
+				Set fso = CreateObject("Scripting.FileSystemObject")
+				
+				CMDLine = oHTA.commandLine
+				CMDLen = len(CMDLine)
+				CMDLine = right(CMDLine, CMDLen-1)
+				pos = instrRev(CMDLine, "\")
+				CMDLine = left(CMDLine, pos)
+				
+				Set f = fso.OpenTextFile(CMDLine & vbsFile)
+					s = f.ReadAll()
+					f.Close
+				ExecuteGlobal s
+			End Function
+			'****************************************************************************************************
+			Sub Window_onload()
+				a = Split(oHTA.CommandLine, Chr(34))
+				
+				document.Title = a(5) & " IT"
+				CenterWindow xVar, yVar
+				
+				pbStartTime = Now
+				pbWaitTime = a(3)
+				pbWaitTime = Int(pbWaitTime)
+				
+				rTimer
+				pbTimerID = window.setInterval("rTimer", 200)
+			End Sub
+			'****************************************************************************************************
+			Sub Document_ondblclick()
+				CenterWindow xVar, yVar
+			End Sub
+		</script>
+		
+		<script language="javascript">
+			eval(Include("HTAClose.js"));
+			
+			function Include(jsFile) {
+				var fso, f, s, CMDLine, CMDLen, pos, CMDFull;
+				fso = new ActiveXObject("Scripting.FileSystemObject");
+				
+				CMDLine = oHTA.commandLine;
+				CMDLen = CMDLine.length;
+				var CMDLineA = CMDLine.split("\"");
+				var CMDElems = CMDLineA[1].split("\\");
+				
+				CMDFull = "";
+				
+				for (var x = 0; x <= CMDElems.length - 2; x++){
+					if (x == 0) {
+						CMDFull = CMDElems[x];
+					} else {
+						CMDFull = CMDFull + "\\" + CMDElems[x];
+					}
+				}
+				
+				f = fso.OpenTextFile(CMDFull + "\\" + jsFile);
+				s = f.ReadAll();
+				f.Close();
+				return(s);
+			}
+		</script>
+		
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	
+	<body OnBeforeUnload="SaveTime">
+		<DIV id="starterA">AccountNameVar IT is attempting to HTAText the FriendlyPKGName application. Please save your work and close all FriendlyProcessName windows.</DIV>
+		<DIV id="starterB">When you click OK, all instances of these applications will be terminated automatically and HTATextation will start.</DIV>
+		<DIV id="starterC">If no action is taken within TimeVar/3600 hours, this window will disappear, the applications will be terminated automatically and HTATextation will start.</DIV>
+		<DIV id="starterD"></DIV>
+		<!-- <DIV id="starterB">When you click OK, all instances of these applications will be terminated automatically and HTATextation will start. During the HTATextation, you will get disconnected from the network.</DIV> -->
+		<!-- <DIV id="starterD">It will be necessary to reboot your machine to complete the HTATextation.</DIV> -->
+		
+		<input type="button" value="   OK   " onClick="InstallSoftware">
+		
+		<script language="vbscript">
+			Dim a				: a = Split(oHTA.CommandLine, Chr(34))
+			
+			Dim HVar			: HVar		= "hours"
+				If (CInt(a(3)/3600) <= 1) Then
+          DisTime = a(3)/60
+					HVar = "minutes"
+				Else
+          DisTime = a(3)/3600
+					HVar = "hour(s)"
+				End If
+			
+			Dim Sentence1		: Sentence1 = a(5) & " IT is attempting to " & a(17) & " the " & "<font style=""color:#2980B9"">" & a(7) & "</font>" & " application."
+			Dim Sentence2		: Sentence2 = "Please save your work and close all " & "<font style=""color:#DB1E48"">" & a(9) & "</font>" & " windows."
+			Dim Sentence3		: Sentence3 = "When you click OK, all instances of these applications will be terminated automatically and " & a(17) & " action will start."
+			Dim Sentence4		: Sentence4 = "If no action is taken within " & DisTime & " " & HVar & ", this window will disappear, the applications will be terminated automatically and " & a(17) & "ation will start."
+			Dim SentenceNetwork	: SentenceNetwork = "During the " & a(17) & " action, you will get disconnected from the network."
+			Dim SentenceReboot	: SentenceReboot = "It will be necessary to " & "<font style=""color:#DB1E48"">" & "reboot" & "</font>" & " your machine to complete the " & a(17) & "ation."
+			
+			Dim Section1, Section2, Section3, Section4
+			
+			
+			If CBool(a(11)) = True Then
+				Sentence2 = "<font style=""color:#DB1E48"">" & Sentence2 & "</font>"
+			End If
+			
+			If CBool(a(13)) = True Then
+				Sentence2 = Replace(Sentence2, " windows", "")
+				Section2 = Sentence3 & Chr(32) & SentenceNetwork
+			Else
+				Section2 = Sentence3
+			End If
+			
+			If CBool(a(15)) = True Then
+				Section4 = SentenceReboot
+			End If
+			
+			Section1 = Sentence1 & Chr(32) & Sentence2
+			Section3 = Sentence4
+			
+			
+			document.getElementById("starterA").innerHtml = Section1
+			document.getElementById("starterB").innerHtml = Section2
+			document.getElementById("starterC").innerHtml = Section3
+			document.getElementById("starterD").innerHtml = Section4
+		</script>
+	</body>
+</html>

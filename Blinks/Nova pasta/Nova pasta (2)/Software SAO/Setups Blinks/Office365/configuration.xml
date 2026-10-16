@@ -1,0 +1,25 @@
+<Configuration ID="87cff5e8-f721-4fa3-9162-49bd4f481715">
+  <Info Description="Instalação customizada sem Outlook" />
+  <Add OfficeClientEdition="64" Channel="MonthlyEnterprise">
+    <Product ID="O365ProPlusRetail">
+      <Language ID="pt-br" />
+      <ExcludeApp ID="Access" />
+      <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="Lync" />
+      <ExcludeApp ID="Outlook" />
+      <ExcludeApp ID="Publisher" />
+      <ExcludeApp ID="Bing" />
+    </Product>
+  </Add>
+  <Property Name="SharedComputerLicensing" Value="0" />
+  <Property Name="SCLCacheOverride" Value="0" />
+  <Property Name="AUTOACTIVATE" Value="0" />
+  <Property Name="FORCEAPPSHUTDOWN" Value="FALSE" />
+  <Property Name="DeviceBasedLicensing" Value="0" />
+  <Updates Enabled="TRUE" />
+  <RemoveMSI />
+  <AppSettings>
+    <Setup Name="Company" Value="Blinks Essence" />
+  </AppSettings>
+  <Display Level="Full" AcceptEULA="TRUE" />
+</Configuration>

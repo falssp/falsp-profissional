@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<records>
+    <record>
+        <primary>lm24mpadm0002.insidemedia.net</primary>
+        <port>8905</port>
+        <status_path>/auth/status</status_path>
+        <ng-discovery>/auth/ng-discovery</ng-discovery>
+        <time>1673621315</time>
+        <backups>
+            <backup>HKGISEP00101.insidemedia.net</backup>
+            <backup>LONISEP00102.insidemedia.net</backup>
+        </backups>
+    </record>
+    <record>
+        <primary>lonisep00102.insidemedia.net</primary>
+        <port>8905</port>
+        <status_path>/auth/status</status_path>
+        <ng-discovery>/auth/ng-discovery</ng-discovery>
+        <time>1671119505</time>
+        <backups>
+            <backup>HKGISEP00101.insidemedia.net</backup>
+            <backup>LM24MPADM0002.insidemedia.net</backup>
+        </backups>
+    </record>
+    <record>
+        <primary>hkgisep00101.insidemedia.net</primary>
+        <port>8905</port>
+        <status_path>/auth/status</status_path>
+        <ng-discovery>/auth/ng-discovery</ng-discovery>
+        <time>1669684884</time>
+        <backups>
+            <backup>LM24MPADM0002.insidemedia.net</backup>
+            <backup>LONISEP00102.insidemedia.net</backup>
+        </backups>
+    </record>
+</records>

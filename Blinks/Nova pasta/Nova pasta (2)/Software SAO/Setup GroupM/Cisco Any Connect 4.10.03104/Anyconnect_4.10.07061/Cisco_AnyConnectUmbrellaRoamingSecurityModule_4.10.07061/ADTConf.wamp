@@ -1,0 +1,39 @@
+PROPERTY,ADD,WRAPPER,ClientName=WPP,null
+PROPERTY,ADD,WRAPPER,PKGName=Cisco_AnyConnectUmbrellaRoamingSecurityModule_4.10.07061_WPP_W10_EN_B1,null
+PROPERTY,ADD,WRAPPER,PKGGUID={2926F2F0-E903-4A6D-910D-F2C8384D0106},null
+PROPERTY,ADD,WRAPPER,appVendor=Cisco,null
+PROPERTY,ADD,WRAPPER,ProductName=AnyConnectUmbrellaRoamingSecurityModule,null
+PROPERTY,ADD,WRAPPER,ProductVersion=4.10.07061,null
+PROPERTY,ADD,WRAPPER,killProcessesInstall=acextwebhelper.exe;aciseagent.exe;aciseposture.exe;aciseuac.exe;acpminidump.exe;acswgagent.exe;acumbrellaagent.exe;acwebhelper.exe;dnscrypt-proxy.exe;dnscryptproxy.exe;InstallHelper.exe;InstallHelper64.exe;manifesttool.exe;ProxyCon.exe;VACon64.exe;vpnagent.exe;vpncli.exe;vpndownloader.exe;vpnmgmttun.exe;vpnui.exe,null
+PROPERTY,ADD,WRAPPER,killProcessesUninstall=acextwebhelper.exe;aciseagent.exe;aciseposture.exe;aciseuac.exe;acpminidump.exe;acswgagent.exe;acumbrellaagent.exe;acwebhelper.exe;dnscrypt-proxy.exe;dnscryptproxy.exe;InstallHelper.exe;InstallHelper64.exe;manifesttool.exe;ProxyCon.exe;VACon64.exe;vpnagent.exe;vpncli.exe;vpndownloader.exe;vpnmgmttun.exe;vpnui.exe,null
+
+
+#PREINSTALL
+PREINSTALL,STOP,Process,%killProcessesInstall%=kill;null;null,null
+PREINSTALL,REMOVE,MSI,%PKGGUID%=null=%PKGName%,null;null
+
+#INSTALL
+INSTALL,ADD,MSI,anyconnect-win-4.10.07061-umbrella-predeploy-k9.msi=null=null=%PKGName%,null;null
+
+#POSTINSTALL
+POSTINSTALL,COPY,FILE,orginfo.json=%sourcepath%=%programdata%\Cisco\Cisco AnyConnect Secure Mobility Client\Umbrella,null
+
+
+#USERINSTALL
+
+#PREUNINSTALL
+PREUNINSTALL,STOP,Process,%killProcessesUninstall%=kill;null;null,null
+
+#UNINSTALL
+UNINSTALL,REMOVE,MSI,%PKGGUID%=null=%PKGName%,null;null
+
+#POSTUNINSTALL
+
+#USERUNINSTALL
+
+#ROLLBACK
+
+#This package was build using:
+#Wamp_Cli_Version: v0.8.4
+#Wamp_PS_Version: v1.3.18
+#Wamp_Vscode_Version: v1.4.2
